@@ -35,7 +35,8 @@ html, body{
     padding-bottom: 3px;
 }
 .navbar a:hover{
-    border: solid black 1px;
+    color: #e6e6e6;
+    background-color: black;
 }
 /*social icons*/
 .social{

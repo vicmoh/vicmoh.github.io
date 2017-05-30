@@ -181,7 +181,9 @@ hr{
     }
 }
 @media screen and (max-height: 765px){
-    /*avatar for profile pic*/
+    .head{
+        height: 100%;
+    }
     .avatar-circle{
         margin-bottom: -1em;
     }
@@ -198,7 +200,6 @@ hr{
     }
 }
 @media screen and (max-width: 765px){
-    /*avatar for profile pic*/
     .avatar-circle{
         margin-bottom: -1em;
     }

@@ -53,9 +53,7 @@ html, body{
     z-index: 0;
 }
 
-
 /******************************************/
-
 /*background mountain cover*/
 .head{
     height: 100%;
@@ -109,14 +107,12 @@ html, body{
     text-shadow: 2px 2px black;
     box-shadow: 2px 2px black;
 }
-
 /******************************************/
-
 /*content*/
 .intro, .education{
     /*margin*/
     max-width: 50em;
-    width:92%;
+    width:90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
@@ -129,11 +125,21 @@ html, body{
 .intro{
     font-size: 110%;
 }
+/******************************************/
+/*personal page*/
+.personal{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    text-align: center;
+    background: url(Assets/wood.jpg) repeat fixed 100%;
+}
+/******************************************/
 /*experience*/
 .experience{
     /*margin*/
     max-width: 50em;
-    width:92%;
+    width:100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
@@ -153,6 +159,34 @@ html, body{
     font-size: 90%;
     color: #888;
 }
+/*bull point for the experience list*/
+li{
+    margin-top: 5px;
+    font-size: 110%;
+}
+/******************************************/
+/*education*/
+.education{
+    top: 0;
+    max-width: 100%;
+    padding-top: 2em;
+    margin: auto;
+    background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
+    background-size: cover;
+    width: 100%;
+    filter: blur(5px);
+}
+.education h2, .education p{
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+/*divider*/
+hr{
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
 /*footer*/
 .footer{
     font-family: "Lato", sans-serif;
@@ -161,21 +195,9 @@ html, body{
     color: #888;
 }
 .footer hr {
-  margin-top: 2em;
-  margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
-li{
-    margin-top: 5px;
-    font-size: 110%;
-}
-/*divider*/
-hr{
-  border-top: 1px solid #ccc;
-  border-bottom: none;
-  margin-top: 3em;
-  margin-bottom: 2em;
-}
-
 /******************************************/
 @media screen and (max-width: 1200px){
     .social{

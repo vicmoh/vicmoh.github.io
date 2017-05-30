@@ -160,32 +160,8 @@ html, body{
     font-size: 90%;
     color: #888;
 }
-/*bull point for the experience list*/
-li{
-    margin-top: 5px;
-    font-size: 110%;
-}
-/******************************************/
-/*education*/
-.education{
-    /*top: 0;
-    max-width: 100%;
-    padding-top: 2em;
-    margin: auto;
-    background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
-    background-size: cover;
-    width: 100%;
-    filter: blur(5px);*/
-}
-.eduList h2, .eduList p{
-    position: relative;
-    top: -230px;
-    color: white;
-    text-shadow: 1px 1px grey;
-    z-index: 2;
-}
-.eduBlur{
-    height: 250px;
+.skills{
+    height: 270px;
     width: 100%;
     max-width: 100%;
     padding-top: 2em;
@@ -193,6 +169,11 @@ li{
     background-size: cover;  
     filter: blur(5px);
     z-index: 1;  
+}
+/*bull point for the experience list*/
+li{
+    margin-top: 5px;
+    font-size: 110%;
 }
 /*divider*/
 hr{
@@ -204,7 +185,7 @@ hr{
 /*footer*/
 .footer{
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     text-align: center;
     color: #888;
 }

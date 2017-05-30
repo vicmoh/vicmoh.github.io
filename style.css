@@ -180,6 +180,23 @@ hr{
         display: none;
     }
 }
+@media screen and (max-height: 765px){
+    /*avatar for profile pic*/
+    .avatar-circle{
+        margin-bottom: -1em;
+    }
+    .name h1 {
+        font-size: 250%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p{
+        font-size: 100%;
+        line-height: 160%;
+    }
+}
 @media screen and (max-width: 765px){
     /*avatar for profile pic*/
     .avatar-circle{

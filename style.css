@@ -182,26 +182,10 @@ hr{
         display: none;
     }
 }
-@media screen and (max-height: 765px){
-    .head{
-        height: 100%;
-    }
-    .avatar-circle{
-        margin-bottom: -1em;
-    }
-    .name h1 {
-        font-size: 250%;
-    }
-    .btn{
-        font-size: 110%;
-        padding: 7px 15px;
-    }
-    p{
-        font-size: 100%;
-        line-height: 160%;
-    }
-}
 @media screen and (max-width: 765px){
+    .head{
+        background: url(https://static.pexels.com/photos/26206/pexels-photo.jpg) no-repeat 100%;
+    }
     .avatar-circle{
         margin-bottom: -1em;
     }

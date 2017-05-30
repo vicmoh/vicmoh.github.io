@@ -35,7 +35,6 @@ html, body{
     padding-bottom: 3px;
 }
 .navbar a:hover{
-    text-shadow: 0.5px 0.5px black;
     border: solid black 1px;
 }
 /*social icons*/
@@ -53,7 +52,32 @@ html, body{
 .content{
     z-index: 0;
 }
-
+/******************************************/
+/*image content*/
+.razer{
+    z-index: -1;
+    position: absolute;
+    left:-270;
+    top: 1700;
+    width: 600px;
+    height: 600px;
+}
+.sidepencil{
+    z-index: -1;
+    position: absolute;
+    right: -200;
+    top: 2100;
+    height: 500px;
+    width: 500px;
+}
+.notebook{
+    z-index: -1;
+    position: absolute;
+    right: -200;
+    top: 1500;
+    height: 500px;
+    width: 500px;
+}
 /******************************************/
 /*background mountain cover*/
 .head{
@@ -103,10 +127,11 @@ html, body{
     text-shadow: 2px 2px grey;
     box-shadow: 2px 2px grey;
 }
-/*the button squarebox*/
+.btnBackground{
+    background-color: white;
+}
 .btn:hover{
-    text-shadow: 2px 2px black;
-    box-shadow: 2px 2px black;
+    opacity: 0.75;
 }
 /******************************************/
 /*content*/
@@ -218,6 +243,11 @@ hr{
     margin-bottom: 1em;
 }
 /******************************************/
+@media screen and (max-width: 1500px), screen and (max-height: 800px){
+    .images{
+        display: none;
+    }
+}
 @media screen and (max-width: 1200px){
     .social{
         display: none;

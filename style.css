@@ -11,7 +11,7 @@ html, body{
 }
 /*main index tab bar*/
 .navbar{
-    opacity: 0.75;
+    opacity: 1;
     display: table;
     top: 0;
     background-color: #e6e6e6;
@@ -56,10 +56,10 @@ html, body{
 
 /*background mountain cover*/
 .head{
-    height: 80%;
+    height: 100%;
     width: 100%;
     margin:auto;
-    background: url(https://static.pexels.com/photos/26206/pexels-photo.jpg) no-repeat 50%;
+    background: url(https://static.pexels.com/photos/26206/pexels-photo.jpg) no-repeat fixed 50%;
     display: table;
     top: 0;
     background-size: cover;

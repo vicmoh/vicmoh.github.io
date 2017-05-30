@@ -110,7 +110,7 @@ html, body{
 }
 /******************************************/
 /*content*/
-.intro, .education{
+.intro, .education, .personalTable{
     /*margin*/
     max-width: 50em;
     width:90%;
@@ -125,15 +125,37 @@ html, body{
 /*introduction*/
 .intro{
     font-size: 110%;
+    margin-bottom: 4em;
 }
 /******************************************/
 /*personal page*/
 .personal{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
     text-align: center;
     background: url(Assets/wood.jpg) repeat fixed 100%;
+}
+.personal h1{
+    font-style: "Lato", sans-serif;
+}
+.personalMargin{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.firstPersonal p{
+    font-size: 120%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1em;
+    border: 1px solid white;
+    background-color: white;
+    color: opacity: 0;
+    border-radius: 10px;
+}
+.secondPersonal p{
+    color: white;
+    text-align: left;
 }
 /******************************************/
 /*experience*/
@@ -153,6 +175,8 @@ html, body{
 .row{
     margin-top: 3em;
     margin-bottom: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 /*paragraph*/
 .experience p, .education p{

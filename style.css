@@ -61,7 +61,7 @@ html, body{
     height: 100%;
     width: 100%;
     margin:auto;
-    background: url(https://static.pexels.com/photos/26206/pexels-photo.jpg) no-repeat fixed 100%;
+    background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
     display: table;
     top: 0;
     background-size: cover;
@@ -184,7 +184,7 @@ hr{
 }
 @media screen and (max-width: 765px){
     .head{
-        background: url(https://static.pexels.com/photos/26206/pexels-photo.jpg) no-repeat 100%;
+        background: url(Assets/Mountain.jpg) no-repeat static 50%;
     }
     .avatar-circle{
         margin-bottom: -1em;

@@ -162,7 +162,7 @@ html, body{
     color: white;
     text-align: center;
     background: url(Assets/wood.jpg) repeat fixed 100%;
-    z-index: -2;
+    z-index: -1;
 }
 .personal h1{
     margin-bottom: 2em;
@@ -228,7 +228,7 @@ html, body{
     padding-top: 2em;
     background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
     background-size: cover; 
-    z-index: -3;  
+    z-index: -1;  
 }
 /*bull point for the experience list*/
 li{

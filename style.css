@@ -89,7 +89,7 @@ html, body{
     display: table;
     top: 0;
     background-size: cover;
-    z-index: 0;
+    z-index: -1;
 }
 /*inner table cell*/
 .head .inner{
@@ -150,7 +150,6 @@ html, body{
 }
 /*introduction*/
 .intro{
-    z-index: 0;
     padding-top: 2em;
     padding-bottom: 3em;
     font-size: 110%;
@@ -163,7 +162,7 @@ html, body{
     color: white;
     text-align: center;
     background: url(Assets/wood.jpg) repeat fixed 100%;
-    z-index: 0;
+    z-index: -2;
 }
 .personal h1{
     margin-bottom: 2em;
@@ -189,6 +188,7 @@ html, body{
 }
 /******************************************/
 .bodyContent{
+    z-index: 1;
     position: relative;
 }
 /*education*/
@@ -199,7 +199,7 @@ html, body{
 .experience{
     /*margin*/
     max-width: 50em;
-    width:90%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
@@ -227,8 +227,8 @@ html, body{
     max-width: 100%;
     padding-top: 2em;
     background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
-    background-size: cover;  
-    z-index: 1;  
+    background-size: cover; 
+    z-index: -3;  
 }
 /*bull point for the experience list*/
 li{

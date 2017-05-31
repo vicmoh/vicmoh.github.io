@@ -54,7 +54,7 @@ html, body{
     z-index: 0;
 }
 /******************************************/
-/*image content*/
+/*image content
 .razer{
     z-index: -1;
     position: absolute;
@@ -78,7 +78,7 @@ html, body{
     top: 1500;
     height: 500px;
     width: 500px;
-}
+}*/
 /******************************************/
 /*background mountain cover*/
 .head{
@@ -244,11 +244,12 @@ hr{
     margin-bottom: 1em;
 }
 /******************************************/
-@media screen and (max-width: 1500px){
+/*
+@media screen and (max-width: 1500px), screen and (max-height: 800px){
     .images{
         display: none;
     }
-}
+}*/
 @media screen and (max-width: 1200px){
     .social{
         display: none;

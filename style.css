@@ -56,28 +56,28 @@ html, body{
 /******************************************/
 /*image content*/
 .razer{
-    z-index: -1;
+    z-index: -5;
     position: absolute;
-    left:-270;
-    top: 1700;
-    width: 600px;
-    height: 600px;
+    left: 0;
+    top: 450;
+    width: 241.8px; /*403px;*/
+    height: 368.4px; /*614px;*/
 }
 .sidepencil{
-    z-index: -1;
+    z-index: -5;
     position: absolute;
-    right: -200;
-    top: 2100;
-    height: 500px;
-    width: 500px;
+    right: 0;
+    top: 800;
+    width: 315px; /*630px;*/
+    height: 381px; /*762px;*/
 }
 .notebook{
-    z-index: -1;
+    z-index: -5;
     position: absolute;
-    right: -200;
-    top: 1500;
-    height: 500px;
-    width: 500px;
+    right: 0;
+    top: 100;
+    width: 236px;
+    height: 392px;
 }
 /******************************************/
 /*background mountain cover*/
@@ -89,6 +89,7 @@ html, body{
     display: table;
     top: 0;
     background-size: cover;
+    z-index: 0;
 }
 /*inner table cell*/
 .head .inner{
@@ -142,7 +143,6 @@ html, body{
     width:90%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 3em;
     /*text allign*/
     text-align: center;
     font-weight: 300;
@@ -150,8 +150,10 @@ html, body{
 }
 /*introduction*/
 .intro{
+    z-index: 0;
+    padding-top: 2em;
+    padding-bottom: 3em;
     font-size: 110%;
-    margin-bottom: 4em;
 }
 /******************************************/
 /*personal page*/
@@ -161,8 +163,10 @@ html, body{
     color: white;
     text-align: center;
     background: url(Assets/wood.jpg) repeat fixed 100%;
+    z-index: 0;
 }
 .personal h1{
+    margin-bottom: 2em;
     font-style: "Lato", sans-serif;
 }
 .personalMargin{
@@ -184,11 +188,18 @@ html, body{
     text-align: left;
 }
 /******************************************/
+.bodyContent{
+    position: relative;
+}
+/*education*/
+.education{
+    padding-top: 2em;
+}
 /*experience*/
 .experience{
     /*margin*/
     max-width: 50em;
-    width:100%;
+    width:90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
@@ -231,20 +242,24 @@ hr{
     margin-top: 3em;
     margin-bottom: 2em;
 }
+.skills table{
+    border: 1px solid black;
+}
 /*footer*/
 .footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     text-align: center;
     color: #888;
 }
-.footer hr {
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
 /******************************************/
 /*universal constraint*/
-@media screen and (max-width: 1500px), screen and (max-height: 800px){
+@media screen and (max-width: 2000px){
+
+}
+@media screen and (max-width: 1500px), screen and (max-height: 700px){
     .images{
         display: none;
     }

@@ -217,7 +217,7 @@ html, body{
     padding-top: 2em;
     background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
     background-size: cover;  
-    z-index: 0;  
+    z-index: 1;  
 }
 /*bull point for the experience list*/
 li{

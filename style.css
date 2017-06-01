@@ -400,13 +400,13 @@ hr{
     .firstPersonal h1, .firstPersonal p{
         margin-left: 10%;
     }
-    .skills p{
-        font-size: 70%;
-    }
 }
 @media screen and (max-width: 600px){
     .navbar a{
         padding-right: 15px;
         padding-left: 15px;
+    }
+        .skills p{
+        font-size: 70%;
     }
 }

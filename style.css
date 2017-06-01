@@ -390,9 +390,6 @@ hr{
     table tr > *{
         display: block;
     }
-    table tr {
-        display: table-cell;
-    }
     .skills p, .skills h1, .secondPersonal p{
         text-align: center;
     }

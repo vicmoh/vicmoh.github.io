@@ -166,7 +166,7 @@ html, body{
 }
 .firstPersonal h1{
     color: white;
-    margin-bottom: 45px;
+    margin-bottom: 2em;
     margin-right: 10%;
     font-style: "Lato", sans-serif;
 }
@@ -190,7 +190,7 @@ html, body{
 }
 /*education*/
 .education{
-    padding-top: 2em;
+    padding-top: 3em;
 }
 /*experience*/
 .experience{
@@ -310,6 +310,9 @@ hr{
     }
     table tr {
         display: table-cell;
+    }
+    .skills p{
+        font-size: 80%;
     }
     .skills p, .skills h1, .secondPersonal p{
         text-align: center;

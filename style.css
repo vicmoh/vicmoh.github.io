@@ -394,7 +394,7 @@ hr{
     table tr {
         display: table-cell;
     }
-    .skills p, .skills h1, .secondPersonal p{v
+    .skills p, .skills h1, .secondPersonal p{
         text-align: center;
     }
     .firstPersonal h1, .firstPersonal p{

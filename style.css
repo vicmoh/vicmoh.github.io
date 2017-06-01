@@ -368,7 +368,7 @@ hr{
         display: none;
     }
 }
-@media screen and (max-width: 900px), screen and (max-height: 720px){
+@media screen and (max-width: 900px), screen and (max-height: 800px){
     .avatar-circle{
         margin-bottom: -1em;
     }
@@ -377,6 +377,23 @@ hr{
     }
     .btn{
         font-size: 110%;
+        padding: 7px 15px;
+    }
+    p{
+        font-size: 100%;
+    }
+}
+@media screen and (max-height: 600px){
+    .avatar-circle{
+        margin-bottom: -1em;
+        width: 100px;
+        height: 100px;
+    }
+    .name h1 {
+        font-size: 150%;
+    }
+    .btn{
+        font-size: 80%;
         padding: 7px 15px;
     }
     p{
@@ -406,3 +423,4 @@ hr{
         font-size: 70%;
     }
 }
+@media screen and (max-height: )

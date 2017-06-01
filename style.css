@@ -402,11 +402,14 @@ hr{
 }
 @media screen and (max-width: 600px){
     .navbar a{
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
         font-size: 80%;
     }
     .skills{
         font-size: 70%;
+    }
+    .navbar a{
+
     }
 }

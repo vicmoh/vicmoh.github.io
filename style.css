@@ -14,6 +14,7 @@ html, body{
     padding: 0;
     height: 100%;
     width: 100%;
+    min-width: 300px;
 }
 /*main index tab bar*/
 .navbar{
@@ -290,13 +291,14 @@ html, body{
     margin-bottom: 5px;
 }
 .popup {
-    vertical-align: middle;
-    margin: 70px auto;
+    right: 0;
+    left: 0;
+    margin: 100px auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 70%;
-    position: relative;
+    width: 250px;
+    position: absolute;
     transition: all 5s ease-in-out;
 }
 .popup h2 {

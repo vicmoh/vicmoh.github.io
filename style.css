@@ -17,7 +17,7 @@ html, body{
 }
 /*main index tab bar*/
 .navbar{
-    opacity: 0.85;
+    opacity: 0.80;
     display: table;
     top: 0;
     background-color: black;
@@ -242,7 +242,7 @@ html, body{
     z-index: -1;    
 }
 .skillsTable div{
-    opacity: 0.85;
+    opacity: 0.80;
     background-color: black;
     border-radius: 20px;
     margin: 1em; 

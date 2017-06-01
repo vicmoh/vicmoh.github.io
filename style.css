@@ -166,7 +166,7 @@ html, body{
 }
 .firstPersonal h1{
     color: white;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     margin-right: 10%;
     font-style: "Lato", sans-serif;
 }
@@ -223,9 +223,17 @@ html, body{
 .skills{
     padding-top: 75px;
     padding-bottom: 75px;
+    text-align: center;
     background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
     background-size: cover; 
     z-index: -1;    
+}
+.skillsTable div{
+    opacity: 0.75;
+    background-color: black;
+    border-radius: 20px;
+    margin: 1em; 
+    padding: 2em;
 }
 .skills h1{
     opacity: 1;
@@ -238,15 +246,8 @@ html, body{
     opacity: 1;
     margin-right: 2em;
     margin-left: 2em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.skillsTable div{
-    opacity: 0.75;
-    background-color: black;
-    border-radius: 20px;
-    margin: 1em; 
-    padding: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*footer*/
 .footer{
@@ -271,10 +272,7 @@ hr{
 }
 /******************************************/
 /*universal constraint*/
-@media screen and (max-width: 2000px){
-
-}
-@media screen and (max-width: 1500px), screen and (max-height: 700px){
+@media screen and (max-width: 1500px){
     .images{
         display: none;
     }
@@ -300,9 +298,25 @@ hr{
         line-height: 160%;
     }
 }
+@media screen and (max-width: 670px){
+    table tr > *{
+        display: block;
+        text-align: center;
+    }
+    table tr {
+        display: table-cell;
+    }
+    .skills p, .skills h1, .secondPersonal p{
+        text-align: center;
+    }
+    .firstPersonal h1, .firstPersonal p{
+        margin-left: 10%;
+    }
+
+}
 @media screen and (max-width: 600px){
     .navbar a{
         padding-right: 15px;
         padding-left: 15px;
-    }
+    }S
 }

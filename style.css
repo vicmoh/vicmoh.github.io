@@ -368,7 +368,7 @@ hr{
         display: none;
     }
 }
-@media screen and (max-width: 900px), screen and (max-height: 800px){
+@media screen and (max-width: 900px), screen and (max-height: 00px){
     .avatar-circle{
         margin-bottom: -1em;
     }
@@ -405,8 +405,9 @@ hr{
     .skills{
         font-size: 70%;
     }
+}
+@media screen and (max-height: 600px){
     .navbar{
         position: initial;
     }
 }
-@media screen and (max-height: )

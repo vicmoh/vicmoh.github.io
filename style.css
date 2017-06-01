@@ -405,5 +405,8 @@ hr{
     .skills{
         font-size: 70%;
     }
+    .navbar{
+        position: initial;
+    }
 }
 @media screen and (max-height: )

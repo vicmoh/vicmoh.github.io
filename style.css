@@ -136,8 +136,8 @@ html, body{
     opacity: 0.75;
 }
 /******************************************/
-/*content*/
-.intro, .education, .personalTable{
+/*content and center*/
+.intro, .education, .personalTable, .skillsTable{
     /*margin*/
     max-width: 50em;
     width:90%;
@@ -157,27 +157,23 @@ html, body{
 /******************************************/
 /*personal page*/
 .personal{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 55px;
+    padding-bottom: 80px;
     color: white;
     text-align: center;
     background: url(Assets/wood.jpg) repeat fixed 100%;
     z-index: -1;
 }
-.personal h1{
-    margin-bottom: 2em;
-    font-style: "Lato", sans-serif;
-}
-.personalMargin{
-    margin-left: 10%;
+.firstPersonal h1{
+    color: white;
+    margin-bottom: 35px;
     margin-right: 10%;
+    font-style: "Lato", sans-serif;
 }
 .firstPersonal p{
     font-size: 120%;
-    margin-left: 10%;
     margin-right: 10%;
     padding: 1em;
-    border: 1px solid white;
     background-color: white;
     color: opacity: 0;
     border-radius: 10px;
@@ -187,6 +183,7 @@ html, body{
     text-align: left;
 }
 /******************************************/
+/*main white page body content*/
 .bodyContent{
     z-index: 1;
     position: relative;
@@ -221,14 +218,44 @@ html, body{
     font-size: 90%;
     color: #888;
 }
+/******************************************/
+/*skills and contacts*/
 .skills{
-    height: 270px;
-    width: 100%;
-    max-width: 100%;
-    padding-top: 2em;
+    padding-top: 75px;
+    padding-bottom: 75px;
     background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
     background-size: cover; 
-    z-index: -1;  
+    z-index: -1;    
+}
+.skills h1{
+    opacity: 1;
+    color: grey;
+    margin-top: -5px; 
+}
+.skills p{
+    text-align: left;
+    color: white;
+    opacity: 1;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.skillsTable div{
+    opacity: 0.75;
+    background-color: black;
+    border-radius: 20px;
+    margin: 1em; 
+    padding: 2em;
+}
+/*footer*/
+.footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #888;
 }
 /*bull point for the experience list*/
 li{
@@ -241,18 +268,6 @@ hr{
     border-bottom: none;
     margin-top: 3em;
     margin-bottom: 2em;
-}
-.skills table{
-    border: 1px solid black;
-}
-/*footer*/
-.footer{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #888;
 }
 /******************************************/
 /*universal constraint*/

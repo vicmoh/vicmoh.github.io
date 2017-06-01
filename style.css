@@ -7,7 +7,7 @@ Readme: This code is an CSS for the layout of my web resume
 /*import*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url("http://fonts.googleapis.com/css?family=Lato:300,700");
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive");
 /*main*/
 html, body{
     margin: 0;
@@ -39,6 +39,8 @@ html, body{
     border-radius: 7px;
     padding-top: 3px;
     padding-bottom: 3px;
+    /*fade*/
+    transition: all 0.3s ease-out;
 }
 .navbar a:hover{
     color: black;
@@ -48,7 +50,7 @@ html, body{
 .social{
     top: 13.5px;
     position: absolute;
-    z-index: 12;
+    z-index: 11;
     padding-left: 50px;
 }
 .social img{
@@ -137,6 +139,8 @@ html, body{
     text-decoration: none;
     text-shadow: 2px 2px black;
     box-shadow: 2px 2px black;
+    /*fade*/
+    transition: all 0.3s ease-out;
 }
 .btnBackground{
     background-color: white;
@@ -177,7 +181,7 @@ html, body{
     color: white;
     margin-bottom: 2em;
     margin-right: 10%;
-    font-style: "Lato", sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
 }
 .firstPersonal p{
     font-size: 120%;
@@ -258,11 +262,66 @@ html, body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/******************************************/
 /*contact*/
 .contact{
     text-decoration: none;
     color: white;
 }
+/*popup*/
+.overlay {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popinfo p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: all 5s ease-in-out;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+/******************************************/
 /*footer*/
 .footer{
     padding-top: 5px;
@@ -287,7 +346,6 @@ hr{
 /******************************************/
 /*universal constraint*/
 @media screen and (max-width: 1400px){
-
     /*image content*/
     .razer{
         width: 157.17px;/*241.8px;*/

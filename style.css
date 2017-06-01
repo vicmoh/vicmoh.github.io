@@ -37,7 +37,6 @@ html, body{
     padding-right: 28px;
     padding-left: 28px;
     /*border: solid #e6e6e6 1px;*/
-    border-radius: 7px;
     padding-top: 3px;
     padding-bottom: 3px;
     /*fade*/
@@ -398,9 +397,9 @@ hr{
 }
 @media screen and (max-width: 600px){
     .navbar a{
-        padding-right: 10px;
-        padding-left: 10px;
-        font-size: 70%;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 80%;
     }
     .skills{
         font-size: 70%;

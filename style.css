@@ -143,9 +143,6 @@ html, body{
     /*fade*/
     transition: all 0.3s ease-out;
 }
-.btnBackground{
-    background-color: white;
-}
 .btn:hover{
     opacity: 0.55;
 }

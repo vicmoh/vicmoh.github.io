@@ -382,9 +382,6 @@ hr{
     p{
         font-size: 100%;
     }
-    .navbar{
-        position: initial;
-    }
 }
 @media screen and (max-width: 900px){
     /**************************/

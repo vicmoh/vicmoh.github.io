@@ -382,6 +382,9 @@ hr{
     p{
         font-size: 100%;
     }
+    .navbar{
+        position: initial;
+    }
 }
 @media screen and (max-width: 900px){
     /**************************/
@@ -404,10 +407,5 @@ hr{
     }
     .skills{
         font-size: 70%;
-    }
-}
-@media screen and (max-height: 800px){
-    .navbar{
-        position: initial;
     }
 }

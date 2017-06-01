@@ -290,11 +290,12 @@ html, body{
     margin-bottom: 5px;
 }
 .popup {
+    vertical-align: middle;
     margin: 70px auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 70%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -305,12 +306,12 @@ html, body{
 }
 .popup .close {
     position: absolute;
+    text-decoration: none;
     top: -5px;
     right: 5px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
-    text-decoration: none;
     color: #333;
     transition: all 0.5s ease-in-out;
 }
@@ -382,6 +383,8 @@ hr{
     p{
         font-size: 100%;
     }
+}
+@media screen and (max-width: 900px){
     /**************************/
     /*table*/
     table tr > *{
@@ -400,22 +403,11 @@ hr{
     .firstPersonal h1, .firstPersonal p{
         margin-left: 10%;
     }
-    .popup p, .popup h2, .close{
-        font-size: 80%;
-    }
+
 }
 @media screen and (max-width: 600px){
     .navbar a{
         padding-right: 15px;
         padding-left: 15px;
-    }
-}
-@media screen and (max-width: 520px){
-    .popup p, .popup h2, .close{
-        font-size: 60%;
-    }
-@media screen and (max-width: 400px){
-    .popup p, .popup h2, .close{
-        font-size: 40%;
     }
 }

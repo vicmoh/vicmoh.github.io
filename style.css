@@ -383,7 +383,7 @@ hr{
         font-size: 100%;
     }
 }
-@media screen and (max-height: 600px){
+@media screen and (max-height: 400px){
     .avatar-circle{
         margin-bottom: -1em;
         width: 100px;

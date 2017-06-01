@@ -277,13 +277,27 @@ hr{
 }
 /******************************************/
 /*universal constraint*/
-@media screen and (max-width: 1500px){
-    .images{
-        display: none;
+@media screen and (max-width: 1400px){
+
+    /*image content*/
+    .razer{
+        width: 157.17px;/*241.8px;*/
+        height: 239.46px;/*368.4px;*/
+    }
+    .sidepencil{
+        width: 204.75px;/*315px;*/
+        height: 247.65px;/*381px;*/
+    }
+    .notebook{
+        width: 153.4px;/*236px;*/
+        height: 254.8px;/*392px;*/
     }
 }
 @media screen and (max-width: 1200px){
     .social{
+        display: none;
+    }
+    .images{
         display: none;
     }
 }

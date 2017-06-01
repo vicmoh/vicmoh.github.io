@@ -394,16 +394,15 @@ hr{
     table tr {
         display: table-cell;
     }
-    .skills p{
-        font-size: 70%;
-    }
     .skills p, .skills h1, .secondPersonal p{
         text-align: center;
     }
     .firstPersonal h1, .firstPersonal p{
         margin-left: 10%;
     }
-
+    .skills p{
+        font-size: 70%;
+    }
 }
 @media screen and (max-width: 600px){
     .navbar a{

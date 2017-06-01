@@ -240,7 +240,7 @@ html, body{
     color: grey;
     margin-top: -5px; 
 }
-.skills p, .skills a{
+.skills p{
     text-align: left;
     color: white;
     opacity: 1;
@@ -250,7 +250,7 @@ html, body{
     margin-bottom: 10px;
 }
 /*contact*/
-.contact a{
+.contact{
     text-decoration: none;
     color: white;
 }
@@ -311,7 +311,7 @@ hr{
     table tr {
         display: table-cell;
     }
-    .skills p, .skills h1, .secondPersonal p, .skills a{
+    .skills p, .skills h1, .secondPersonal p{
         text-align: center;
     }
     .firstPersonal h1, .firstPersonal p{

@@ -368,7 +368,7 @@ hr{
         display: none;
     }
 }
-@media screen and (max-width: 765px), screen and (max-height: 600px){
+@media screen and (max-width: 750px), screen and (max-height: 600px){
     .avatar-circle{
         margin-bottom: -1em;
     }
@@ -403,9 +403,6 @@ hr{
     .popup p, .popup h2, .close{
         font-size: 80%;
     }
-}
-@media screen and (max-width: 670px){
-
 }
 @media screen and (max-width: 600px){
     .navbar a{

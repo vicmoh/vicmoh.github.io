@@ -368,7 +368,7 @@ hr{
         display: none;
     }
 }
-@media screen and (max-width: 900px), screen and (max-height: 700px){
+@media screen and (max-width: 900px), screen and (max-height: 600px){
     .avatar-circle{
         margin-bottom: -1em;
     }

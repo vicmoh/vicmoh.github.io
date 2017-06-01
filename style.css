@@ -382,8 +382,8 @@ hr{
     p{
         font-size: 100%;
     }
-}
-@media screen and (max-width: 670px){
+    /**************************/
+    /*table*/
     table tr > *{
         display: block;
         text-align: center;
@@ -403,6 +403,9 @@ hr{
     .popup p, .popup h2, .close{
         font-size: 80%;
     }
+}
+@media screen and (max-width: 670px){
+
 }
 @media screen and (max-width: 600px){
     .navbar a{

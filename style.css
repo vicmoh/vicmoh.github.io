@@ -389,7 +389,6 @@ hr{
     /*table*/
     table tr > *{
         display: block;
-        text-align: center;
     }
     table tr {
         display: table-cell;
@@ -405,8 +404,9 @@ hr{
     .navbar a{
         padding-right: 15px;
         padding-left: 15px;
+        font-size: 80%;
     }
-        .skills p{
+    .skills{
         font-size: 70%;
     }
 }

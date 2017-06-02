@@ -14,7 +14,6 @@ html, body{
     padding: 0;
     height: 100%;
     width: 100%;
-    min-width: 400px;
 }
 /*main index tab bar*/
 .navbar{
@@ -416,7 +415,7 @@ hr{
     }
 }
 @media screen and (max-width: 400px){
-    .skills p, .skills h1{
-        font-size: 80%;
+    p, h1{
+        font-size: 50%;
     }
 }

@@ -402,7 +402,7 @@ hr{
         font-size: 80%;
     }
 }
-@media screen and (max-height: 400px){
+@media screen and (max-height: 500px){
     .navbar{
         position: initial;
         font-size: 85%;

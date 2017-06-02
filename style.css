@@ -285,6 +285,7 @@ html, body{
     margin-bottom: 5px;
 }
 .popup {
+    text-align: center;
     z-index: 21;
     right: 0;
     left: 0;

@@ -394,9 +394,9 @@ hr{
 }
 @media screen and (max-width: 600px){
     .navbar a{
-        padding-right: 5px;
-        padding-left: 5px;
-        font-size: 80%;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 90%;
     }
     .skills{
         font-size: 80%;
@@ -405,6 +405,7 @@ hr{
 @media screen and (max-height: 400px){
     .navbar{
         position: initial;
+        font-size: 85%;
     }
     .head{
         width: 100%;
@@ -413,15 +414,17 @@ hr{
     p, h1, h2, li{
         font-size: 70%;
     }
-    .navbar{
-        font-size: 85%;
-    }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
     p, h1, h2, li{
         font-size: 70%;
     }
-    .navbar{
-        font-size: 85%;
+    .navbar a{
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 75%;
+    }
+    .skills{
+        font-size: 80%;
     }
 }

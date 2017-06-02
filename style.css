@@ -404,28 +404,29 @@ hr{
     }
 }
 @media screen and (max-height: 400px){
+    p, h1, h2, li{
+        font-size: 90%;
+    }
     .navbar{
         position: initial;
-        font-size: 85%;
+        font-size: 90%;
     }
     .head{
         width: 100%;
         height: 500px;
     }
-    p, h1, h2, li{
-        font-size: 70%;
-    }
+
 }
 @media screen and (max-width: 400px){
     p, h1, h2, li{
-        font-size: 70%;
+        font-size: 90%;
     }
     .navbar a{
         padding-right: 5px;
         padding-left: 5px;
-        font-size: 75%;
+        font-size: 90%;
     }
-    .skills{
-        font-size: 80%;
+    .name h1{
+        font-size: 200%;
     }
 }

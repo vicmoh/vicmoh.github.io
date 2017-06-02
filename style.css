@@ -182,7 +182,7 @@ html, body{
     font-family: 'Cedarville Cursive', cursive;
 }
 .firstPersonal p{
-    font-size: 120%;
+    font-size: 100%;
     margin-right: 10%;
     padding: 1em;
     background-color: white;
@@ -413,5 +413,8 @@ hr{
     .head{
         width: 100%;
         height: 500px;
+    }
+    .viewport{
+
     }
 }

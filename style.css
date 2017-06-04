@@ -409,6 +409,10 @@ hr{
     .skills{
         font-size: 80%;
     }
+    .avatar-circle{
+        width: 100px;
+        height: 100px;
+    }
 }
 @media screen and (max-height: 400px){
     p, h1, h2, li{

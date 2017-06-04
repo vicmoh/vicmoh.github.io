@@ -413,6 +413,17 @@ hr{
         width: 100px;
         height: 100px;
     }
+    /*background mountain cover*/
+    .head{
+        height: 600px;
+        width: 100%;
+        margin:auto;
+        background: url(Assets/Mountain.jpg) no-repeat absolute 100%;
+        display: table;
+        top: 0;
+        background-size: cover;
+        z-index: -1;
+    }
 }
 @media screen and (max-height: 400px){
     p, h1, h2, li{

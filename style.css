@@ -418,7 +418,7 @@ hr{
         height: 600px;
         width: 100%;
         margin:auto;
-        background: url(Assets/Mountain.jpg) no-repeat absolute 100%;
+        background: url(Assets/Mountain.jpg) no-repeat absolute 10%;
         display: table;
         top: 0;
         background-size: cover;

@@ -413,7 +413,7 @@ hr{
         width: 100px;
         height: 100px;
     }
-    /*background mountain cover*/
+    /*make the cover stationary for mobile*/
     .head{
         height: 100%;
         width: 100%;

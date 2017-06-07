@@ -1,0 +1,180 @@
+/*Vicky Mohammad, Megh Trivedi
+  February 10, 2016
+  Trealea Inc Website*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input{
+	margin: 10px;
+	float: center;
+	border-radius: 15px; 
+	border-color: black;
+}
+.center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.middle{
+    max-width: 50em;
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    /*text allign*/
+    text-align: center;
+}
+/*************************************************/
+/*navigation bar*/
+.navbar{
+	opacity: 0.80;
+	display: inline;
+	top: 0;
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 10;
+}
+.navButton a{
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.navButton a:hover{
+    color: white;
+    border: 2px solid white;
+}
+/*trademark/brand name*/
+.trademark{
+    top: 12px;
+    color: white;
+    position: absolute;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.trademark img{
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+/*social icons*/
+.social{
+    top: 20px;
+    right: 10px;
+    position: absolute;
+    z-index: 11;
+    padding-right: 50px;
+}
+.social img{
+    float: right;
+    filter: invert(100%);
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social a{
+    font-size: 0;
+}
+.social label{
+    padding-right: 10px;
+    color: white;
+}
+/*************************************************/
+/*login cover*/
+.loginCover {
+	top: 0;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url('Assets/uog2.jpg') no-repeat center center fixed;
+	background-size: cover;
+	z-index: 1;
+}
+.loginCover img{
+	color: black;
+	opacity: 0.75;
+	/*size*/
+	height: 20%;
+	border-radius: 50%; 
+	/*position*/
+	position: absolute;
+	margin: auto;
+	top: 10%;
+	left: 0;
+	right: 0;
+}
+/*************************************************/
+/*widget*/
+.blur {
+	background: url('Assets/uog2.jpg') no-repeat center center fixed;
+	background-size: cover;
+	overflow: hidden;
+	filter: blur(13px);
+	position: absolute;
+	height: 200%;
+}
+.widget {
+	border-top: 2px solid rgba(255, 255, 255, .5);
+	border-bottom: 2px solid rgba(255, 255, 255, .5);
+	height: 260px;
+	width: 100%;
+	overflow: hidden;
+}
+.login {
+	width: 200px;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+.login a{
+	font-size: 13px;
+	text-shadow: 0px 0px black;
+	color: lightgrey;
+}
+.submit{
+    opacity: 0.70;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.submit:hover{
+    /*color:rgba(0,0,0,0.8); for transparent*/
+    opacity: 1;
+    background-color: black;
+    border: 2px solid black;
+}
+.textfield{
+    text-decoration: none; 
+    text-align: center;
+    /*remove blue outline*/
+    outline: 0;
+}
+.signup{
+	padding: 3px;
+	border-radius: 5px;
+	text-decoration: none;
+}

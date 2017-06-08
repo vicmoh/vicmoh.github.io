@@ -112,7 +112,7 @@ input{
 	background-size: cover;
 	z-index: 1;
 }
-.loginCover img{
+.insideCover img{
 	color: black;
 	opacity: 0.75;
 	/*size*/
@@ -121,9 +121,18 @@ input{
 	/*position*/
 	position: absolute;
 	margin: auto;
-	top: 10%;
+	top: 12%;
 	left: 0;
 	right: 0;
+}
+.insideCover label{
+    color: lightgrey;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    bottom: 2%;
+    z-index: 3; 
 }
 /*************************************************/
 /*widget*/
@@ -133,7 +142,9 @@ input{
 	overflow: hidden;
 	filter: blur(13px);
 	position: absolute;
+    left: -100px;
 	height: 200%;
+    width: 200%;
 }
 .widget {
 	border-top: 2px solid rgba(255, 255, 255, .5);
@@ -182,4 +193,55 @@ input{
 	padding: 3px;
 	border-radius: 5px;
 	text-decoration: none;
+}
+/*************************************************/
+/*constraint*/
+@media screen and (max-height: 900px){
+    .loginCover img{
+        height: 15%;
+        top: 14%;
+    }
+}
+@media screen and (max-height: 720px){
+    .loginCover img{
+        height: 10%;
+        top: 14%;
+    }
+}
+@media screen and (max-height: 540px){
+    .loginCover img{
+        display: none;
+    }
+}
+@media screen and (max-width: 1280px){
+    .navButton a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .navButton a{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 900px){
+    .navbar{
+        transition: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .trademark{
+        right: 0;
+        left: 0;
+        margin-left: initial;
+    }
+    .navButton a{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
 }

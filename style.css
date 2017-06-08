@@ -106,6 +106,7 @@ html, body{
     top: 0;
     background-size: cover;
     z-index: -1;
+    transition-delay: all 1.5s ease-out;
 }
 /*inner table cell*/
 .head .inner{

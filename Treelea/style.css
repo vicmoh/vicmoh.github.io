@@ -44,6 +44,7 @@ input{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	z-index: 10;
+    transition: all 1.5s ease-out;
 }
 .navButton a{
     text-transform: uppercase;
@@ -54,12 +55,13 @@ input{
     text-decoration: none;
     color: white;
     margin: 5px;
-    border: 2px solid black;
+    border: 2px solid transparent;
     border-radius: 5px;
 }
 .navButton a:hover{
     color: white;
     border: 2px solid white;
+    transition: all 1.5s ease-out;
 }
 /*trademark/brand name*/
 .trademark{

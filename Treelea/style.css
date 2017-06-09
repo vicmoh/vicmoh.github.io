@@ -12,8 +12,16 @@ html, body {
 input{
 	margin: 10px;
 	float: center;
-	border-radius: 15px; 
+	border-radius: 3px; 
 	border-color: black;
+    opacity: 0.95;
+    /*textfield*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none; 
+    text-align: center;
+    /*remove blue outline*/
+    outline: 0;
 }
 .center {
     position: absolute;
@@ -216,7 +224,7 @@ input{
     position: fixed;
     border-top: 2px solid rgba(255, 255, 255, .5);
     border-bottom: 2px solid rgba(255, 255, 255, .5);
-    height: 260px;
+    height: 270px;
     width: 100%;
     overflow: hidden;
     z-index: 1;
@@ -258,14 +266,6 @@ input{
     opacity: 1;
     background-color: black;
     border: 2px solid black;
-}
-.textfield{
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-decoration: none; 
-    text-align: center;
-    /*remove blue outline*/
-    outline: 0;
 }
 .signup{
 	padding: 3px;
@@ -316,13 +316,7 @@ input{
         left: 0;
         margin-left: initial;
     }
-    .navButton a{
-        display: none;
-    }
-    .social{
-        display: none;
-    }
-    .welcome{
+    .navButton a, .social, .welcome, .about, .term, .blank{
         display: none;
     }
     .loginCover{

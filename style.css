@@ -16,6 +16,14 @@ html, body{
     width: 100%;
     -webkit-text-size-adjust: 100%;
 }
+.treelea{
+    text-decoration: none;
+    color: #666;
+}
+.treelea:hover{
+    text-decoration: underline;
+    color: black;
+}
 /*main index tab bar*/
 .navbar{
     opacity: 0.80;

@@ -124,6 +124,8 @@ input{
 /*login cover*/
 .loginCover {
     /*hidden until invoke*/
+    transition: all .5s ease-in;
+    transition: all .5s ease-out;
     visibility: hidden;
     opacity: 0;
     /*position*/
@@ -271,5 +273,12 @@ input{
     }
     .social{
         display: none;
+    }
+    .welcome{
+        display: none;
+    }
+    .loginCover{
+        visibility: visible;
+        opacity: 1;
     }
 }

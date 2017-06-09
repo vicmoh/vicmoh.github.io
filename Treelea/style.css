@@ -139,11 +139,54 @@ input{
     z-index: 3;
 }
 .term{
-    background: url('Assets/condo.jpg') no-repeat center center fixed;
+    background: url('Assets/torontoEdit.jpg') no-repeat center center fixed;
     background-size: cover;
     z-index: 4;
 }
 /*************************************************/
+/*home page materials*/
+.welcome a{
+    text-decoration: none;
+    color: white;
+    border: 5px solid white;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.welcome a:hover{
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+.welcomeIntro{
+    color: white;
+    position: absolute;
+    font-size: 125%;
+    left: 5%;
+    bottom: 25%;
+}
+.android{
+    bottom: 5%;
+    /*default spot*/
+    opacity: 0.6;
+    width: 200px;
+    position: absolute;
+    right: 5%;
+}
+.ios{
+    bottom: 15%;
+    /*default spot*/
+    opacity: 0.6;
+    width: 200px;
+    position: absolute;
+    right: 5%;
+}
+/*************************************************/
+/*login materials*/
 .insideCover img{
 	color: black;
 	opacity: 0.75;

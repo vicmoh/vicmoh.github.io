@@ -377,4 +377,7 @@ input{
         visibility: visible;
         opacity: 1;
     }
+    .welcome:target, .loginCover:target, .about:target, .term:target{
+        transition: all 0s ease-out;
+    }
 }

@@ -158,8 +158,8 @@ input{
     color: white;
     border: 5px solid white;
     position: absolute;
-    left: 10%;
-    bottom: 10%;
+    left: 150px;
+    bottom: 85px;
     padding: 20px;
     font-size: 30px;
     font-weight: 700;
@@ -175,11 +175,11 @@ input{
     color: white;
     position: absolute;
     font-size: 125%;
-    left: 5%;
-    bottom: 25%;
+    left: 100px;
+    bottom: 185px;
 }
 .android{
-    bottom: 5%;
+    bottom: 130px;
     /*default spot*/
     opacity: 0.6;
     width: 200px;
@@ -187,7 +187,7 @@ input{
     right: 5%;
 }
 .ios{
-    bottom: 15%;
+    bottom: 50px;
     /*default spot*/
     opacity: 0.6;
     width: 200px;

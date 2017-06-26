@@ -1,7 +1,10 @@
 /*for the page scrolling when click*/
 $(document).ready(function(){
     // Add smooth scrolling to all links and .not for close
-    $("a").not('[href="#close"]').not('[href="#popup1"]').on('click', function(event) {
+    $("a")
+    .not('[href="#close"]')
+    .not('[href="#popup1"]')
+    .not('[href="https://vimoh1995.github.io/Treelea/#homeID"]').on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {

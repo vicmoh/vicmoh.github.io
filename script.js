@@ -1,3 +1,9 @@
+/************************************************************
+Name: Vicky Mohammad 
+Date: May 31, 2017
+Readme: This code is for scrolling animation
+************************************************************/
+
 /*for the page scrolling when click*/
 $(document).ready(function(){
     // Add smooth scrolling to all links and .not for close

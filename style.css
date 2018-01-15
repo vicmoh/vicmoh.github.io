@@ -16,13 +16,13 @@ html, body{
     width: 100%;
     -webkit-text-size-adjust: 100%;
 }
-.treelea{
+.links{
     text-decoration: none;
     color: #666;
 }
-.treelea:hover{
+.links:hover{
     text-decoration: underline;
-    color: black;
+    color: pink;
 }
 /*main index tab bar*/
 .navbar{
@@ -398,7 +398,7 @@ hr{
     .avatar-circle{
         margin-bottom: -1em;
     }
-    .name h1 {
+    .name h1{
         font-size: 250%;
     }
     .btn{

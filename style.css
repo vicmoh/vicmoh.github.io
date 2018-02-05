@@ -22,7 +22,7 @@ html, body{
 }
 .links:hover{
     text-decoration: underline;
-    color: pink;
+    color: rgb(255, 0, 0);
 }
 /*main index tab bar*/
 .navbar{
@@ -175,8 +175,21 @@ html, body{
 /*introduction*/
 .intro{
     padding-top: 2em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     font-size: 110%;
+}
+/*github giant logo that has links*/
+.github{
+        /*margin*/
+        max-width: 50em;
+        width:90%;
+        margin-right: auto;
+        margin-left: auto;
+        /*text allign*/
+        text-align: center;
+        font-weight: 300;
+        color: #666;
+        padding-bottom: 1em;
 }
 /******************************************/
 /*personal page*/

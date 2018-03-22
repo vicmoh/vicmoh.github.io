@@ -9,8 +9,7 @@ $(document).ready(function(){
     // Add smooth scrolling to all links and .not for close
     $("a")
     .not('[href="#close"]')
-    .not('[href="#popup1"]')
-    .not('[href="https://vimoh1995.github.io/Treelea/#homeID"]').on('click', function(event) {
+    .not('[href="#popup1"]').on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -57,4 +56,12 @@ function playScrollVideo(){
     }//end if
 
     window.requestAnimationFrame(scrollPlay);
+}//end func
+
+function changeAosAt(){
+    var x = window.matchMedia("(max-width: 1200px)");
+    if(x.matches){//when media size match do something
+        document.getElementById("contactID").removeAttribute("fade-left");
+        document.getElementById("skillsID").removeAttribute("fade-right");
+    }//end if
 }//end func

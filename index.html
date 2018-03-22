@@ -21,7 +21,7 @@ Readme: This code is the HTML content of my web resume
         <!--meta name="viewport" content="width=device-width"-->
         <!--https://css-tricks.com/snippets/html/responsive-meta-tag/-->
         <!--meta name="viewport" content="width=device-width, initial-scale=0"-->
-        <meta name="viewport" content="width=1000">
+        <meta name="viewport" content="width=500">
         <!--//////////////////////////////////////////////////////-->
     </head>
 
@@ -103,21 +103,21 @@ Readme: This code is the HTML content of my web resume
             </section>
 
             <!--this will be a github logo, make the background white-->
-            <section class="github" data-aos="fade-right">
+            <section class="github" id="githubID" data-aos="fade-right">
                 <a href="https://github.com/vicmoh"><img class="github logo" src="Assets/github logo.png"></a>
             </section>
 
             <!--personal-->
             <section class="personal">
                 <table class="personalTable">
-                    <th class="firstPersonal" data-aos="fade-right">
+                    <th class="firstPersonal" id="firstPersonalID" data-aos="fade-right">
                         <h1><i>Personal Background</i></h1>
                         <p>Hi there! My name is Vicky Mohammad, 
                         I am a student at the University of Guelph pursuing bachelor of computing in computer science major. 
                         As you know, I am still a student with a limited understanding of programming. 
                         My end goal is to learn and experience as much as possible!</p>
                     </th>
-                    <th class="secondPersonal" data-aos="fade-left">
+                    <th class="secondPersonal" id="secondPersonalID" data-aos="fade-left">
                         <i><p>Energetic, self-motivated, and resourceful with a substantial ability to perform efficiently.</p>
                         <p>Ability to work independently with strong problem-solving skills.</p>
                         <p>Collaborate and articulate excellently in a team environment.</p>
@@ -280,8 +280,34 @@ Readme: This code is the HTML content of my web resume
             <footer class="footer">
                 <p>&copy; Vicky Mohammad 2017</p>
             </footer>
-
             <!--end of container-->    
         </div>    
+        <script>
+            function setDefaultAos(id){
+                document.getElementsById(up)[0].setAttribute("data-aos", "fade-up");
+            }//end func
+
+            //removeattributees for aos
+            function changeAosAt(){
+                var x = window.matchMedia("(max-width: 1200px)");
+                if(x.matches){//when media size match do something
+                    //remove attributes
+                    document.getElementById("contactID").removeAttribute("data-aos");
+                    document.getElementById("skillsID").removeAttribute("data-aos");
+                    document.getElementById("firstPersonalID").removeAttribute("data-aos");
+                    document.getElementById("secondPersonalID").removeAttribute("data-aos");
+                    document.getElementById("personalID").removeAttribute("data-aos");
+                    document.getElementById("githubID").removeAttribute("data-aos");
+                    //set attributes
+                    setDefaultAos("contactID");
+                    setDefaultAos("skillsID");
+                    setDefaultAos("firstPersonalID");
+                    setDefaultAos("secondPersonalID");
+                    setDefaultAos("personalID");
+                    setDefaultAos("githubID");
+                }//end if
+            }//end func
+            changeAosAt();
+        </script>
     </body>
 </html>

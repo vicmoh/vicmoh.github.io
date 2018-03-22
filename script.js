@@ -57,11 +57,3 @@ function playScrollVideo(){
 
     window.requestAnimationFrame(scrollPlay);
 }//end func
-
-function changeAosAt(){
-    var x = window.matchMedia("(max-width: 1200px)");
-    if(x.matches){//when media size match do something
-        document.getElementById("contactID").removeAttribute("fade-left");
-        document.getElementById("skillsID").removeAttribute("fade-right");
-    }//end if
-}//end func

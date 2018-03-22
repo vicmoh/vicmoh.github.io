@@ -8,6 +8,7 @@ Readme: This code is an CSS for the layout of my web resume
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive");
+
 /*main*/
 html, body{
     margin: 0;

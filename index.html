@@ -11,7 +11,7 @@ Readme: This code is the HTML content of my web resume
         <title>Vicky Mohammad's Web Resume</title>
         <!-- css libs -->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="animate.css">
+        <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
         <!-- aos lib -->
         <link rel="stylesheet" href="aos/dist/aos.css">
         <script src="aos/dist/aos.js"></script>
@@ -27,6 +27,11 @@ Readme: This code is the HTML content of my web resume
 
     <!--create main front end-->
     <body>
+        <script>
+            AOS.init({
+                duration: 1200,
+            })
+        </script>
 
         <!--index for tab bar-->
         <section class="navbar">
@@ -78,7 +83,7 @@ Readme: This code is the HTML content of my web resume
             <!--name and profile-->
             <section class="head">
                 <div class="inner">
-                    <div class="name animated bounceInUp">
+                    <div class="name animated bounceInUp" data-aos="fade-down">
                         <img class="avatar-circle" src="Assets/ProfilePic.JPG" alt="profile pic">
                         <h1>Vicky Mohammad</h1>
                         <a class="btn">Get Resume</a><!--href="Vicky Mohammad's Resume.pdf"-->
@@ -87,7 +92,7 @@ Readme: This code is the HTML content of my web resume
             </section>
 
             <!--introduction-->
-            <section class="intro" id="personalID">
+            <section class="intro" id="personalID" data-aos="fade-left">
                 <h1>Welcome!</h1>
                 <p>
                     I see that you are checking at my website! To navigate through the page, 
@@ -98,21 +103,21 @@ Readme: This code is the HTML content of my web resume
             </section>
 
             <!--this will be a github logo, make the background white-->
-            <section class="github">
+            <section class="github" data-aos="fade-right">
                 <a href="https://github.com/vicmoh"><img class="github logo" src="Assets/github logo.png"></a>
             </section>
 
             <!--personal-->
             <section class="personal">
                 <table class="personalTable">
-                    <th class="firstPersonal">
+                    <th class="firstPersonal" data-aos="fade-right">
                         <h1><i>Personal Background</i></h1>
                         <p>Hi there! My name is Vicky Mohammad, 
                         I am a student at the University of Guelph pursuing bachelor of computing in computer science major. 
                         As you know, I am still a student with a limited understanding of programming. 
                         My end goal is to learn and experience as much as possible!</p>
                     </th>
-                    <th class="secondPersonal">
+                    <th class="secondPersonal" data-aos="fade-left">
                         <i><p>Energetic, self-motivated, and resourceful with a substantial ability to perform efficiently.</p>
                         <p>Ability to work independently with strong problem-solving skills.</p>
                         <p>Collaborate and articulate excellently in a team environment.</p>
@@ -125,14 +130,14 @@ Readme: This code is the HTML content of my web resume
             <section class="bodyContent">
                 <!--images-->
                 <section class="images">
-                    <img class="razer" src="Assets/croptoprazer.jpg">
-                    <img class="sidepencil" src="Assets/cropsideflippencil.jpg">
-                    <img class="notebook" src="Assets/cropnotebook.jpg">
+                    <img data-aos="fade-right" class="razer" src="Assets/croptoprazer.jpg">
+                    <img data-aos="fade-down" class="notebook" src="Assets/cropnotebook.jpg">
+                    <img data-aos="fade-up" class="sidepencil" src="Assets/cropsideflippencil.jpg">
                     <!--img clas="iphone" src="Assets/cropiphone6.jpg"-->
                 </section>
 
                 <!--education-->
-                <section class="education">
+                <section class="education" data-aos="fade-up">
                     <h2>University of Guelph — <i>Bachelor of Computer Science</i></h2>
                     <p>Present</p>
                     <h2>Centennial CVI, Guelph — <i>High School diploma</i></h2>
@@ -144,7 +149,7 @@ Readme: This code is the HTML content of my web resume
                 <section class="experience" id="experienceID">
 
                 	<!--education experience-->
-                	<div class="row">
+                	<div class="row" data-aos="fade-up">
                         <div class="educationHeader">
                             <h2>Candidate for Bachelors of <i>Computer Science</i></h2>
                             <p>University of Guelph, Guelph, Ontario</p>
@@ -158,7 +163,7 @@ Readme: This code is the HTML content of my web resume
  								such as managing and allocating memory efficiently.</li>
                                 <li>Understanding and generating sorting algorithm including bubble sort, selection sort, insert sort, merge sort, heap sort algorithm, and other advanced sorting algorithms.</li>
                                 <!--CIS2420-->
-                            	<h2>CIS2420 - Object-oriented Programing</h2>
+                            	<h2>CIS2430 - Object-oriented Programing</h2>
                                 <li>Gained experiences in creating and comprehensively learned the use of objects from class libraries, user-defined objects, inheritance, modularity, generic code, components, collections, and containers.</li>
                                 <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
                                 <li>Earned proficient skills in making a graphic user interface.</li>
@@ -168,7 +173,7 @@ Readme: This code is the HTML content of my web resume
                     </div>
 
                     <!--work experience-->
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="grid-1">
                             <a class="links" href="http://rpdw.ca/"><h2>Royal Pioneer - <i>Logo Design</i></h2></a>
                             <p>October 2017 - December 2017</p>
@@ -182,7 +187,7 @@ Readme: This code is the HTML content of my web resume
                         </div>
                         <hr>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="grid-1">
                             <!--href="https://vicmoh.github.io/Treelea/index.html#homeID"-->
                             <a class="links" href="http://treelea.com"><h2>University of Waterloo, Enterprise Co-op - <i>Mobile Development</i></h2></a>
@@ -198,7 +203,7 @@ Readme: This code is the HTML content of my web resume
                         </div>
                         <hr>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="grid-1">
                             <a class="links" href="http://icubeutm.ca/our-teams/sensify-labs/"><h2>University of Toronto, ICUBE - <i>Graphic Design</i></h2></a>
                             <p>October 2016 - November 2016</p>
@@ -212,7 +217,7 @@ Readme: This code is the HTML content of my web resume
                         </div>
                         <hr>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="grid-1">
                             <h2>University of Guelph, Physical Resource — <i>Custodial Service</i></h2>
                             <p>October 2013 - August 2016</p>
@@ -227,7 +232,7 @@ Readme: This code is the HTML content of my web resume
                         </div>
                         <hr>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="grid-1">
                             <h2>Guelph Tribune — <i>Paper Delivery</i></h2>
                             <p>March 2007 - July 2010</p>
@@ -250,7 +255,7 @@ Readme: This code is the HTML content of my web resume
             <section class="skills">
                 <table class="skillsTable">
                     <!--skills section-->
-                    <th class="skillsSection" id="skillsID">
+                    <th class="skillsSection" id="skillsID" data-aos="fade-right">
                         <div>
                             <h1>Knowledge &amp; Skills </h1>
                             <p>Languages/Frameworks: <i>C, HTML, CSS, Swift, Java, Shell Script.</i></p>
@@ -259,7 +264,7 @@ Readme: This code is the HTML content of my web resume
                         </div>
                     </th>
                     <!--contact section-->
-                    <th class="contact" id="contactID">
+                    <th class="contact" id="contactID" data-aos="fade-left">
                         <div>
                             <h1>Contact</h1>
                             <p>Guelph, On N1G2W6</p>

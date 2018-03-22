@@ -58,11 +58,3 @@ function playScrollVideo(){
 
     window.requestAnimationFrame(scrollPlay);
 }//end func
-
-AOS.init({
-    easing: 'ease-in-out-sine',
-});
-
-function addItem(){
-    
-}//end func

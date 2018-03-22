@@ -283,10 +283,6 @@ Readme: This code is the HTML content of my web resume
             <!--end of container-->    
         </div>    
         <script>
-            function setDefaultAos(id){
-                document.getElementsById(up)[0].setAttribute("data-aos", "fade-up");
-            }//end func
-
             //removeattributees for aos
             function changeAosAt(){
                 var x = window.matchMedia("(max-width: 1200px)");
@@ -299,12 +295,15 @@ Readme: This code is the HTML content of my web resume
                     document.getElementById("personalID").removeAttribute("data-aos");
                     document.getElementById("githubID").removeAttribute("data-aos");
                     //set attributes
-                    setDefaultAos("contactID");
-                    setDefaultAos("skillsID");
-                    setDefaultAos("firstPersonalID");
-                    setDefaultAos("secondPersonalID");
-                    setDefaultAos("personalID");
-                    setDefaultAos("githubID");
+                    // function setDefaultAos(id){
+                    //     document.getElementById(id).setAttribute("data-aos", "fade-up");
+                    // }//end func
+                    // setDefaultAos("contactID");
+                    // setDefaultAos("skillsID");
+                    // setDefaultAos("firstPersonalID");
+                    // setDefaultAos("secondPersonalID");
+                    // setDefaultAos("personalID");
+                    // setDefaultAos("githubID");
                 }//end if
             }//end func
             changeAosAt();

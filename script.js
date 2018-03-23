@@ -7,7 +7,7 @@ Readme: This code is for scrolling animation
 /*for the page scrolling when click*/
 $(document).ready(function(){
     // Add smooth scrolling to all links and .not for close
-    $("a")
+    $(".navpage a")
     .not('[href="#close"]')
     .not('[href="#popup1"]').on('click', function(event) {
 

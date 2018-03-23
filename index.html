@@ -289,8 +289,8 @@ Readme: This code is the HTML content of my web resume
         <script>
             //removeattributees for aos
             function changeAosAt(){
-                var x = window.matchMedia("(max-width: 1200px)");
-                if(x.matches){//when media size match do something
+                var dimension = window.matchMedia("(max-width: 1200px)");
+                if(dimension.matches){//when media size match do something
                     //remove attributes
                     document.getElementById("contactID").removeAttribute("data-aos");
                     document.getElementById("skillsID").removeAttribute("data-aos");

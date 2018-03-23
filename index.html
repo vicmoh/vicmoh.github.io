@@ -286,32 +286,5 @@ Readme: This code is the HTML content of my web resume
             </footer>
             <!--end of container-->    
         </div>    
-        <script>
-            //removeattributees for aos
-            function changeAosAt(){
-                var dimension = window.matchMedia("(max-width: 1200px)");
-                if(dimension.matches){//when media size match do something
-                    //remove attributes
-                    document.getElementById("contactID").removeAttribute("data-aos");
-                    document.getElementById("skillsID").removeAttribute("data-aos");
-                    document.getElementById("firstPersonalID").removeAttribute("data-aos");
-                    document.getElementById("secondPersonalID").removeAttribute("data-aos");
-                    document.getElementById("personalID").removeAttribute("data-aos");
-                    document.getElementById("githubID").removeAttribute("data-aos");
-                    //set attributes
-                    // function setDefaultAos(id){
-                    //     document.getElementById(id).setAttribute("data-aos", "fade-up");
-                    // }//end func
-                    // setDefaultAos("contactID");
-                    // setDefaultAos("skillsID");
-                    // setDefaultAos("firstPersonalID");
-                    // setDefaultAos("secondPersonalID");
-                    // setDefaultAos("personalID");
-                    // setDefaultAos("githubID");
-                    
-                }//end if
-            }//end func
-            changeAosAt();
-        </script>
     </body>
 </html>

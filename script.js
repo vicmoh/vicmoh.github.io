@@ -29,6 +29,9 @@ $(document).ready(function(){
             });
         } // End if
     });
+
+    //change animation
+    changeAosAt(1000);
 });
 
 /************************************************************
@@ -56,4 +59,28 @@ function playScrollVideo(){
     }//end if
 
     window.requestAnimationFrame(scrollPlay);
+}//end func
+
+//removeattributees for aos
+function changeAosAt(width){
+    var dimension = window.matchMedia("(max-width: +"+width+"px)");
+    if(dimension.matches){//when media size match do something
+        //remove attributes
+        document.getElementById("contactID").removeAttribute("data-aos");
+        document.getElementById("skillsID").removeAttribute("data-aos");
+        document.getElementById("firstPersonalID").removeAttribute("data-aos");
+        document.getElementById("secondPersonalID").removeAttribute("data-aos");
+        document.getElementById("personalID").removeAttribute("data-aos");
+        document.getElementById("githubID").removeAttribute("data-aos");
+        //set attributes
+        // function setDefaultAos(id){
+        //     document.getElementById(id).setAttribute("data-aos", "fade-up");
+        // }//end func
+        // setDefaultAos("contactID");
+        // setDefaultAos("skillsID");
+        // setDefaultAos("firstPersonalID");
+        // setDefaultAos("secondPersonalID");
+        // setDefaultAos("personalID");
+        // setDefaultAos("githubID");
+    }//end if
 }//end func

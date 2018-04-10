@@ -5,11 +5,11 @@ Readme: This code is for scrolling animation
 ************************************************************/
 
 /*for the page scrolling when click*/
-$(document).ready(function(){
+$(document).ready(function () {
     // Add smooth scrolling to all links and .not for close
     $(".navpage a")
-    .not('[href="#close"]')
-    .not('[href="#popup1"]').on('click', function(event) {
+        .not('[href="#close"]')
+        .not('[href="#popup1"]').on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -23,12 +23,15 @@ $(document).ready(function(){
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function(){
+            }, 800, function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
         } // End if
     });
+
+    // make tans to solid nav bar when scroll
+    transToSolidNavBar();
 
     //change animation
     changeAosAt(1000);
@@ -38,23 +41,35 @@ $(document).ready(function(){
 custom functions
 ************************************************************/
 
-function playScrollVideo(){
+function transToSolidNavBar() {
+    // Transition effect for navbar 
+    $(window).scroll(function () {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if ($(this).scrollTop() > 500) {
+            $('.navbar').addClass('solid');
+        } else {
+            $('.navbar').removeClass('solid');
+        }
+    });
+}//end func
+
+function playScrollVideo() {
     var frameNumber = 0, // start video at frame 0
         // lower numbers = faster playback
-        playbackConst = 500, 
+        playbackConst = 500,
         // get page height from video duration
-        setHeight = document.getElementById("setHeight"), 
+        setHeight = document.getElementById("setHeight"),
         // select video element         
-        vid = document.getElementById('scrollVideo'); 
-        // var vid = $('#v0')[0]; // jquery option
-        // dynamically set the page height according to video length
-        vid.addEventListener('loadedmetadata', function() {
+        vid = document.getElementById('scrollVideo');
+    // var vid = $('#v0')[0]; // jquery option
+    // dynamically set the page height according to video length
+    vid.addEventListener('loadedmetadata', function () {
         setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
     });
     // Use requestAnimationFrame for smooth playback
-    function scrollPlay(){  
-        var frameNumber  = window.pageYOffset/playbackConst;
-        vid.currentTime  = frameNumber;
+    function scrollPlay() {
+        var frameNumber = window.pageYOffset / playbackConst;
+        vid.currentTime = frameNumber;
         window.requestAnimationFrame(scrollPlay);
     }//end if
 
@@ -62,9 +77,9 @@ function playScrollVideo(){
 }//end func
 
 //removeattributees for aos
-function changeAosAt(width){
-    var dimension = window.matchMedia("(max-width: +"+width+"px)");
-    if(dimension.matches){//when media size match do something
+function changeAosAt(width) {
+    var dimension = window.matchMedia("(max-width: +" + width + "px)");
+    if (dimension.matches) {//when media size match do something
         //remove attributes
         document.getElementById("contactID").removeAttribute("data-aos");
         document.getElementById("skillsID").removeAttribute("data-aos");

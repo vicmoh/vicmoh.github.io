@@ -48,6 +48,8 @@ html, body{
     padding-top: 15px;
     padding-bottom: 15px;
     z-index: 10;
+    /* for the trans to solid on scroll */
+    background-color: transparent;
 }
 /*button page*/
 .navbar a{

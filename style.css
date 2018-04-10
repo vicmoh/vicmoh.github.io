@@ -38,7 +38,8 @@ html, body{
 }
 /*main index tab bar*/
 .navbar{
-    opacity: 0.80;
+    /* opacity: 0.80; */
+    opacity: 1;
     display: table;
     top: 0;
     background-color: black;
@@ -50,6 +51,7 @@ html, body{
     z-index: 10;
     /* for the trans to solid on scroll */
     background-color: transparent;
+    transition: 1s ease 0s;
 }
 /*button page*/
 .navbar a{

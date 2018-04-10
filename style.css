@@ -42,7 +42,7 @@ html, body{
     opacity: 1;
     display: table;
     top: 0;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     position: fixed;
     text-align: center;

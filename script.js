@@ -6,33 +6,10 @@ Readme: This code is for scrolling animation
 
 /*for the page scrolling when click*/
 $(document).ready(function () {
-    // Add smooth scrolling to all links and .not for close
-    $(".navpage a")
-        .not('[href="#close"]')
-        .not('[href="#popup1"]').on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-
+    //animate the button scroll
+    animateScroll();
     // make tans to solid nav bar when scroll
     transToSolidNavBar();
-
     //change animation
     changeAosAt(1000);
 });
@@ -42,22 +19,37 @@ custom functions
 ************************************************************/
 
 function transToSolidNavBar() {
-    // // Transition effect for navbar 
-    // $(window).scroll(function () {
-    //     // checks if window is scrolled more than 500px, adds/removes solid class
-    //     if ($(this).scrollTop() > 500) {
-    //         $('.navbar').addClass('solid');
-    //     } else {
-    //         $('.navbar').removeClass('solid');
-    //     }
-    // });
-    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').css('background-color', 'black');
         } else {
             $('.navbar').css('background-color', 'transparent');
         }//end if
+    });
+}//end func
+
+function animateScroll(){
+    // Add smooth scrolling to all links and .not for close
+    $(".navpage a")
+    .not('[href="#close"]')
+    .not('[href="#popup1"]').on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
     });
 }//end func
 

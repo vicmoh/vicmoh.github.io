@@ -5,7 +5,7 @@ Readme: This code is for scrolling animation
 ************************************************************/
 
 /*for the page scrolling when click*/
-$(document).ready(function () {
+$(document).ready(function() {
     //animate the button scroll
     animateScroll();
     // make tans to solid nav bar when scroll
@@ -20,10 +20,12 @@ custom functions
 
 function transToSolidNavBar() {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
+        if ($(this).scrollTop() > 1) {
             $('.navbar').css('background-color', 'black');
+            // $('.navbar').css('opacity', 1);
         } else {
             $('.navbar').css('background-color', 'transparent');
+            // $('.navbar').css('opacity', 0.8);
         }//end if
     });
 }//end func

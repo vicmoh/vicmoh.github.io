@@ -126,7 +126,9 @@ html, body{
     width: 100%;
     margin:auto;
     /* background: url(Assets/Mountain.jpg) no-repeat fixed 100%; */
-    background: url(Assets/blurredimg.gif) no-repeat fixed 100%;
+    /* darkened background < 1 is more less dark */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url(Assets/blurredimg.gif) no-repeat fixed 100%;
     display: table;
     top: 0;
     background-size: cover;

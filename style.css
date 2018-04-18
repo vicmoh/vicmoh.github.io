@@ -126,9 +126,9 @@ html, body{
     width: 100%;
     margin:auto;
     /* background: url(assets/Mountain.jpg) no-repeat fixed 100%; */
-    /* darkened background < 1 is more less dark */
+    /* darkened background < 1 is more less dark (blurredimg.gif)*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url(assets/blurredimg.gif) no-repeat fixed 100%;
+                url(assets/compressed-blurred.gif) no-repeat fixed 100%;
     display: table;
     top: 0;
     background-size: cover;
@@ -292,7 +292,7 @@ html, body{
     text-align: center;
     /* background: url(assets/Mountain.jpg) no-repeat fixed 100%; */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url(assets/macbook-table.jpg) no-repeat fixed 100%;
+                url(assets/macbook-table-compressed.jpg) no-repeat fixed 100%;
     background-size: cover; 
     z-index: -1;    
 }

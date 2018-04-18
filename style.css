@@ -125,7 +125,7 @@ html, body{
     /* background: url(assets/Mountain.jpg) no-repeat fixed 100%; */
     /* darkened background < 1 is more less dark (blurredimg.gif)*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url(assets/blurredimg.gif) no-repeat fixed 100%;
+                url(assets/compressed-blurred.gif) no-repeat fixed 100%;
     height: 100%;
     width: 100%;
     margin:auto;
@@ -350,9 +350,7 @@ html, body{
     right: 0;
     left: 0;
     margin: 10% auto;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 20px;
     padding-bottom: 30px;
     background: #fff;
     border-radius: 5px;
@@ -377,7 +375,7 @@ html, body{
     transition: all 0.5s ease-in-out;
 }
 .popup .close:hover {
-    color: red
+    color: #06D85F;
 }
 .popup .content {
     max-height: 30%;
@@ -484,12 +482,8 @@ hr{
         z-index: -1;
     }
     .skills{
-        background: url(assets/macbook-table-compressed.jpg) no-repeat 100%;
+        background: url(assets/Mountain2.jpeg) no-repeat 100%;
         background-size: cover;
-    }
-    .popup{
-        padding-right: 20px;
-        padding-left: 20px;
     }
 }
 @media screen and (max-height: 400px){

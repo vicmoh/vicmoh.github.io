@@ -125,10 +125,10 @@ html, body{
     height: 100%;
     width: 100%;
     margin:auto;
-    /* background: url(Assets/Mountain.jpg) no-repeat fixed 100%; */
+    /* background: url(assets/Mountain.jpg) no-repeat fixed 100%; */
     /* darkened background < 1 is more less dark */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url(Assets/blurredimg.gif) no-repeat fixed 100%;
+                url(assets/blurredimg.gif) no-repeat fixed 100%;
     display: table;
     top: 0;
     background-size: cover;
@@ -217,7 +217,7 @@ html, body{
     padding-bottom: 80px;
     color: white;
     text-align: center;
-    background: url(Assets/wood.jpg) repeat fixed 100%;
+    background: url(assets/wood.jpg) repeat fixed 100%;
     z-index: -1;
 }
 .firstPersonal h1{
@@ -290,7 +290,9 @@ html, body{
     padding-top: 75px;
     padding-bottom: 75px;
     text-align: center;
-    background: url(Assets/Mountain.jpg) no-repeat fixed 100%;
+    /* background: url(assets/Mountain.jpg) no-repeat fixed 100%; */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url(assets/macbook-table.jpg) no-repeat fixed 100%;
     background-size: cover; 
     z-index: -1;    
 }
@@ -473,14 +475,14 @@ hr{
         height: 100%;
         width: 100%;
         margin:auto;
-        background: url(Assets/blurredimg.gif) no-repeat 100%;
+        background: url(assets/blurredimg.gif) no-repeat 100%;
         display: table;
         top: 0;
         background-size: cover;
         z-index: -1;
     }
     .skills{
-        background: url(Assets/Mountain2.jpeg) no-repeat 100%;
+        background: url(assets/Mountain2.jpeg) no-repeat 100%;
         background-size: cover;
     }
 }

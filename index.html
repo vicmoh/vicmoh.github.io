@@ -5,285 +5,337 @@ Readme: This code is the HTML content of my web resume
 -->
 
 <html>
-    <!--fonts and header-->
-    <head>    
-        <title>Vicky Mohammad's Web Resume</title>
-        <!-- css libs -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
-        <!-- aos lib -->
-        <link rel="stylesheet" href="aos/dist/aos.css">
-        <script src="aos/dist/aos.js"></script>
-        <!-- ajax and js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-        <!--meta name="viewport" content="width=device-width"-->
-        <!--https://css-tricks.com/snippets/html/responsive-meta-tag/-->
-        <!--meta name="viewport" content="width=device-width, initial-scale=0"-->
-        <meta name="viewport" content="width=500">
-        <!--//////////////////////////////////////////////////////-->
-    </head>
+<!--fonts and header-->
 
-    <!--create main front end-->
-    <body>
-        <script>
-            AOS.init({
-                duration: 1200,
-            })
-        </script>
+<head>
+  <title>Vicky Mohammad's Web Resume</title>
+  <!-- my libs -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
 
-        <!--index for tab bar-->
-        <section class="navbar">
-            <!--social network-->
-            <div class="social">
-                <!--
-                <button type="submit" style="background-color:rgba(255,255,255,0.0); 
-                border:none;" id="resultButton" onclick="showResults();">
-                <img src="images/search.png" /></button>
-                -->
-                <!--linkedin-->
-                <!--<a href="#"><img src="Assets/linkedin.png"></a>-->
-                <!--google-->
-                <!--<a><img src="Assets/google.png"></a>-->
-                <!--twittern-->
-                <!--<a><img src="Assets/twitter.png"></a>-->
-                <!--facebook-->
-                <a href="https://www.facebook.com/vicmoham"><img src="Assets/facebook.png"></a>
-            </div>
-            <!--page index-->
-            <div class="navpage">
-                <a href="#personalID" id="index">Personal</a>
-                <a href="#experienceID" id="index">Experience</a>
-                <a href="#skillsID" id="index">Skills</a>
-                <a href="#popup1" id="index">Contact</a>
-            </div>
-        </section>
+  <!-- aos lib -->
+  <link rel="stylesheet" href="aos/dist/aos.css">
+  <script src="aos/dist/aos.js"></script>
 
-        <!--contact popup-->
-        <section id="popup1" class="overlay">
-            <div class="popup">
-                <h2><u>Contact Information</u></h2>
-                <!--onClick="history.go(-1);return true;"-->
-                <a class="close" href="#close">&times;</a>
-                <div class="popinfo">
-                    <p><b>Primary:</b></p>
-                    <p>1-(519)-731-5289</p>
-                    <p>mohammav@uoguelph.ca</p>
-                    <p><b>Secondary:</b></p>
-                    <p>1-(226)-215-5447</p>
-                    <p>vimoh1213@gmail.com</p>
-                </div>
-            </div>
-        </section>
+  <!-- other libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 
-        <!--container-->
-        <div class="content">
+  <!-- view ports -->
+  <meta name="viewport" content="width=500">
+  <!--meta name="viewport" content="width=device-width"-->
+  <!--https://css-tricks.com/snippets/html/responsive-meta-tag/-->
+  <!--meta name="viewport" content="width=device-width, initial-scale=0"-->
+</head>
 
-            <!--name and profile-->
-            <section class="head">
-                <div class="inner">
-                    <div class="name animated bounceInUp" data-aos="fade-down">
-                        <img class="avatar-circle" src="Assets/ProfilePic.JPG" alt="profile pic">
-                        <h1>Vicky Mohammad</h1>
-                        <a class="btn">Get Resume</a><!--href="Vicky Mohammad's Resume.pdf"-->
-                    </div>
-                </div>
-            </section>
+<!--create main front end-->
 
-            <!-- <video id="video-background" autoplay muted loop id="myVideo">
+<body>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+
+  <!--index for tab bar-->
+  <section class="navbar">
+    <!--social network-->
+    <div class="social">
+      <!--
+      <button type="submit" style="background-color:rgba(255,255,255,0.0); 
+      border:none;" id="resultButton" onclick="showResults();">
+      <img src="images/search.png" /></button>
+      -->
+      <!--linkedin-->
+      <!--<a href="#"><img src="Assets/linkedin.png"></a>-->
+      <!--google-->
+      <!--<a><img src="Assets/google.png"></a>-->
+      <!--twittern-->
+      <!--<a><img src="Assets/twitter.png"></a>-->
+      <!--facebook-->
+      <a href="https://www.facebook.com/vicmoham">
+        <img src="Assets/facebook.png">
+      </a>
+    </div>
+    <!--page index-->
+    <div class="navpage">
+      <a href="#personalID" id="index">Personal</a>
+      <a href="#experienceID" id="index">Experience</a>
+      <a href="#skillsID" id="index">Skills</a>
+      <a href="#popup1" id="index">Contact</a>
+    </div>
+  </section>
+
+  <!--contact popup-->
+  <section id="popup1" class="overlay">
+    <div class="popup">
+      <h2>
+        <u>Contact Information</u>
+      </h2>
+      <!--onClick="history.go(-1);return true;"-->
+      <a class="close" href="#close">&times;</a>
+      <div class="popinfo">
+        <p>
+          <b>Primary:</b>
+        </p>
+        <p>1-(519)-731-5289</p>
+        <p>mohammav@uoguelph.ca</p>
+        <p>
+          <b>Secondary:</b>
+        </p>
+        <p>1-(226)-215-5447</p>
+        <p>vimoh1213@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!--container-->
+  <div class="content">
+
+    <!--name and profile-->
+    <section class="head">
+      <div class="inner">
+        <div class="name animated bounceInUp" data-aos="fade-down">
+          <img class="avatar-circle" src="Assets/ProfilePic.JPG" alt="profile pic">
+          <h1>Vicky Mohammad</h1>
+          <a class="btn">Get Resume</a>
+          <!--href="Vicky Mohammad's Resume.pdf"-->
+        </div>
+      </div>
+    </section>
+
+    <!-- <video id="video-background" autoplay muted loop id="myVideo">
                 <source src="assets/sky.mov" type="video/mov">
             </video> -->
 
-            <!--introduction-->
-            <section class="intro" id="personalID" data-aos="fade-left">
-                <h1>Welcome!</h1>
-                <p>
-                    I see that you are checking at my website! To navigate through the page, 
-                    click at the navigation bar at the top or scroll down. 
-                    If you want to get or check out the PDF version of the resume click the (Get Resume) button above.
-                    And if you would like to see my repository of my past works, click the GitHub logo below. 
-                </p>
-            </section>
+    <!--introduction-->
+    <section class="intro" id="personalID" data-aos="fade-left">
+      <h1>Welcome!</h1>
+      <p>
+        I see that you are checking at my website! To navigate through the page, click at the navigation bar at the top or scroll
+        down. If you want to get or check out the PDF version of the resume click the (Get Resume) button above. And if you
+        would like to see my repository of my past works, click the GitHub logo below.
+      </p>
+    </section>
 
-            <!--this will be a github logo, make the background white-->
-            <section class="github" id="githubID" data-aos="fade-right">
-                <a href="https://github.com/vicmoh"><img class="github logo" src="Assets/github logo.png"></a>
-            </section>
+    <!--this will be a github logo, make the background white-->
+    <section class="github" id="githubID" data-aos="fade-right">
+      <a href="https://github.com/vicmoh">
+        <img class="github logo" src="Assets/github logo.png">
+      </a>
+    </section>
 
-            <!--personal-->
-            <section class="personal">
-                <table class="personalTable">
-                    <th class="firstPersonal" id="firstPersonalID" data-aos="fade-right">
-                        <h1><i>Personal Background</i></h1>
-                        <p>Hi there! My name is Vicky Mohammad, 
-                        I am a student at the University of Guelph pursuing bachelor of computing in computer science major. 
-                        As you know, I am still a student with a limited understanding of programming. 
-                        My end goal is to learn and experience as much as possible!</p>
-                    </th>
-                    <th class="secondPersonal" id="secondPersonalID" data-aos="fade-left">
-                        <i><p>Energetic, self-motivated, and resourceful with a substantial ability to perform efficiently.</p>
-                        <p>Ability to work independently with strong problem-solving skills.</p>
-                        <p>Collaborate and articulate excellently in a team environment.</p>
-                        <p>Outstanding interpersonal and communication skills.</p></i>
-                    </th>
-                </table>
-            </section>
+    <!--personal-->
+    <section class="personal">
+      <table class="personalTable">
+        <th class="firstPersonal" id="firstPersonalID" data-aos="fade-right">
+          <h1>
+            <i>Personal Background</i>
+          </h1>
+          <p>Hi there! My name is Vicky Mohammad, I am a student at the University of Guelph pursuing bachelor of computing
+            in computer science major. As you know, I am still a student with a limited understanding of programming. My
+            end goal is to learn and experience as much as possible!</p>
+        </th>
+        <th class="secondPersonal" id="secondPersonalID" data-aos="fade-left">
+          <i>
+            <p>Energetic, self-motivated, and resourceful with a substantial ability to perform efficiently.</p>
+            <p>Ability to work independently with strong problem-solving skills.</p>
+            <p>Collaborate and articulate excellently in a team environment.</p>
+            <p>Outstanding interpersonal and communication skills.</p>
+          </i>
+        </th>
+      </table>
+    </section>
 
-            <!--body content-->
-            <section class="bodyContent">
-                <!--images-->
-                <section class="images">
-                    <img data-aos="fade-right" class="razer" src="Assets/croptoprazer.jpg">
-                    <img data-aos="fade-down" class="notebook" src="Assets/cropnotebook.jpg">
-                    <img data-aos="fade-up" class="sidepencil" src="Assets/cropsideflippencil.jpg">
-                    <!--img clas="iphone" src="Assets/cropiphone6.jpg"-->
-                </section>
+    <!--body content-->
+    <section class="bodyContent">
+      <!--images-->
+      <section class="images">
+        <img data-aos="fade-right" class="razer" src="Assets/croptoprazer.jpg">
+        <img data-aos="fade-down" class="notebook" src="Assets/cropnotebook.jpg">
+        <img data-aos="fade-up" class="sidepencil" src="Assets/cropsideflippencil.jpg">
+        <!--img clas="iphone" src="Assets/cropiphone6.jpg"-->
+      </section>
 
-                <!--education-->
-                <section class="education" data-aos="fade-up">
-                    <h2>University of Guelph — <i>Bachelor of Computer Science</i></h2>
-                    <p>Present</p>
-                    <h2>Centennial CVI, Guelph — <i>High School diploma</i></h2>
-                    <p>September 2009 - June 2014</p>
-                    <hr>
-                </section>
+      <!--education-->
+      <section class="education" data-aos="fade-up">
+        <h2>University of Guelph —
+          <i>Bachelor of Computer Science</i>
+        </h2>
+        <p>Present</p>
+        <h2>Centennial CVI, Guelph —
+          <i>High School diploma</i>
+        </h2>
+        <p>September 2009 - June 2014</p>
+        <hr>
+      </section>
 
-                <!--Experience Tables-->
-                <section class="experience" id="experienceID">
+      <!--Experience Tables-->
+      <section class="experience" id="experienceID">
 
-                	<!--education experience-->
-                	<div class="row" data-aos="fade-right">
-                        <div class="educationHeader">
-                            <h2>Candidate for Bachelors of <i>Computer Science</i></h2>
-                            <p>University of Guelph, Guelph, Ontario</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                            	<!--CIS2520-->
-                            	<h2>CIS2520 - Data Structure</h2>
-                                <li>Acquired skills in building and implementing data struct APIs such as lists, stacks, queues, priority queues, hashmaps, binary trees, as well as AVL trees.</li>
-								<li>Knowledge of using pointers in C,
- 								such as managing and allocating memory efficiently.</li>
-                                <li>Understanding and generating sorting algorithm including bubble sort, selection sort, insert sort, merge sort, heap sort algorithm, and other advanced sorting algorithms.</li>
-                                <!--CIS2420-->
-                            	<h2>CIS2430 - Object-oriented Programing</h2>
-                                <li>Gained experiences in creating and comprehensively learned the use of objects from class libraries, user-defined objects, inheritance, modularity, generic code, components, collections, and containers.</li>
-                                <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
-                                <li>Earned proficient skills in making a graphic user interface.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
+        <!--education experience-->
+        <div class="row" data-aos="fade-right">
+          <div class="educationHeader">
+            <h2>Candidate for Bachelors of
+              <i>Computer Science</i>
+            </h2>
+            <p>University of Guelph, Guelph, Ontario</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <!--CIS2520-->
+              <h2>CIS2520 - Data Structure</h2>
+              <li>Acquired skills in building and implementing data struct APIs such as lists, stacks, queues, priority queues,
+                hashmaps, binary trees, as well as AVL trees.</li>
+              <li>Knowledge of using pointers in C, such as managing and allocating memory efficiently.</li>
+              <li>Understanding and generating sorting algorithm including bubble sort, selection sort, insert sort, merge sort,
+                heap sort algorithm, and other advanced sorting algorithms.</li>
+              <!--CIS2420-->
+              <h2>CIS2430 - Object-oriented Programing</h2>
+              <li>Gained experiences in creating and comprehensively learned the use of objects from class libraries, user-defined
+                objects, inheritance, modularity, generic code, components, collections, and containers.</li>
+              <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
+              <li>Earned proficient skills in making a graphic user interface.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
 
-                    <!--work experience-->
-                    <div class="row" data-aos="fade-up">
-                        <div class="grid-1">
-                            <a class="links" href="http://rpdw.ca/"><h2>Royal Pioneer - <i>Logo Design</i></h2></a>
-                            <p>October 2017 - December 2017</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                                <li>Communicate with the client and share ideas effectively.</li>
-                                <li>Designed variety of draft logos to be able to determine the desired logo for the company through AutoDesk SketchBook.</li>
-                                <li>Create the design logos from the draft with Adobe Illustrator to be able to visualize the ideal logo with the client.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="grid-1">
-                            <!--href="https://vicmoh.github.io/Treelea/index.html#homeID"-->
-                            <a class="links" href="http://treelea.com"><h2>University of Waterloo, Enterprise Co-op - <i>Mobile Development</i></h2></a>
-                            <p>January 2017 - April 2017</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                                <li>Develop plans and flowchart for algorithm, workflow, or process to determine flaws and improvements.</li>
-                                <li>Integrate Google Firebase infrastructure to be able to manage a real-time database and cloud system.</li>
-                                <li>Incorporate Facebook SDK and APIs such as login authorization for user statistics.</li>
-                                <li>Communicate and share ideas to perform team proficiency.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="grid-1">
-                            <a class="links" href="http://icubeutm.ca/our-teams/sensify-labs/"><h2>University of Toronto, ICUBE - <i>Graphic Design</i></h2></a>
-                            <p>October 2016 - November 2016</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                                <li>Design an intuitive UI/UX scheme.</li>
-                                <li>Create assets for interface implementation as well as logo designs and image editing.</li>
-                                <li>Communicate and assist with developers in HTML, CSS, and WordPress.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="grid-1">
-                            <h2>University of Guelph, Physical Resource — <i>Custodial Service</i></h2>
-                            <p>October 2013 - August 2016</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                                <li>Restock supplies to ensure availability.</li>
-                                <li>Disinfect floors and surfaces to reduce health risk.</li>
-                                <li>Organize boxes and materials to ease job tasks and safety.</li>
-                                <li>Provides a clean and safe environment for students.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="grid-1">
-                            <h2>Guelph Tribune — <i>Paper Delivery</i></h2>
-                            <p>March 2007 - July 2010</p>
-                        </div>
-                        <div class="grid-2">
-                            <ul>
-                                <li>Organize newspapers and flyers to maximize productivity.</li>
-                                <li>Deliver papers promptly to ensure efficiency.</li>
-                                <li>Organize boxes and materials to ease job tasks and safety.</li>
-                                <li>Construct plans and routes to effectively deliver and surpass obstacles such as harsh weathers.</li>
-                            </ul>
-                        </div>
-                        <hr>
-                    </div>
-                </section>
-                <!--end of body section-->
-            </section>
+        <!--work experience-->
+        <div class="row" data-aos="fade-up">
+          <div class="grid-1">
+            <a class="links" href="http://rpdw.ca/">
+              <h2>Royal Pioneer -
+                <i>Logo Design</i>
+              </h2>
+            </a>
+            <p>October 2017 - December 2017</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <li>Communicate with the client and share ideas effectively.</li>
+              <li>Designed variety of draft logos to be able to determine the desired logo for the company through AutoDesk SketchBook.</li>
+              <li>Create the design logos from the draft with Adobe Illustrator to be able to visualize the ideal logo with the
+                client.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="grid-1">
+            <!--href="https://vicmoh.github.io/Treelea/index.html#homeID"-->
+            <a class="links" href="http://treelea.com">
+              <h2>University of Waterloo, Enterprise Co-op -
+                <i>Mobile Development</i>
+              </h2>
+            </a>
+            <p>January 2017 - April 2017</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <li>Develop plans and flowchart for algorithm, workflow, or process to determine flaws and improvements.</li>
+              <li>Integrate Google Firebase infrastructure to be able to manage a real-time database and cloud system.</li>
+              <li>Incorporate Facebook SDK and APIs such as login authorization for user statistics.</li>
+              <li>Communicate and share ideas to perform team proficiency.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="grid-1">
+            <a class="links" href="http://icubeutm.ca/our-teams/sensify-labs/">
+              <h2>University of Toronto, ICUBE -
+                <i>Graphic Design</i>
+              </h2>
+            </a>
+            <p>October 2016 - November 2016</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <li>Design an intuitive UI/UX scheme.</li>
+              <li>Create assets for interface implementation as well as logo designs and image editing.</li>
+              <li>Communicate and assist with developers in HTML, CSS, and WordPress.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="grid-1">
+            <h2>University of Guelph, Physical Resource —
+              <i>Custodial Service</i>
+            </h2>
+            <p>October 2013 - August 2016</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <li>Restock supplies to ensure availability.</li>
+              <li>Disinfect floors and surfaces to reduce health risk.</li>
+              <li>Organize boxes and materials to ease job tasks and safety.</li>
+              <li>Provides a clean and safe environment for students.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="grid-1">
+            <h2>Guelph Tribune —
+              <i>Paper Delivery</i>
+            </h2>
+            <p>March 2007 - July 2010</p>
+          </div>
+          <div class="grid-2">
+            <ul>
+              <li>Organize newspapers and flyers to maximize productivity.</li>
+              <li>Deliver papers promptly to ensure efficiency.</li>
+              <li>Organize boxes and materials to ease job tasks and safety.</li>
+              <li>Construct plans and routes to effectively deliver and surpass obstacles such as harsh weathers.</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+      </section>
+      <!--end of body section-->
+    </section>
 
-            <!--Skills and contacts-->
-            <section class="skills">
-                <table class="skillsTable">
-                    <!--skills section-->
-                    <th class="skillsSection" id="skillsID" data-aos="fade-right">
-                        <div>
-                            <h1>Knowledge &amp; Skills </h1>
-                            <p>Languages/Frameworks: <i>C, HTML, CSS, Swift, Java, Javascript.</i></p>
-                            <p>Development Environment: <i>Windows, OSX/MacOS, Linux/Unix.</i></p>
-                            <p>Tools: <i>XCode, IntelliJ, Visual Studio, Photoshop C6, Sketch 3.</i></p>
-                        </div>
-                    </th>
-                    <!--contact section-->
-                    <th class="contact" id="contactID" data-aos="fade-left">
-                        <div>
-                            <h1>Contact</h1>
-                            <p>Guelph, On N1G2W6</p>
-                            <p>Canada</p>
-                            <p>1-(519)-731-5289</p>
-                            <p>mohammav@uoguelph.ca</p>
-                        </div>
-                    </th>
-                </table>
-            </section>
+    <!--Skills and contacts-->
+    <section class="skills">
+      <table class="skillsTable">
+        <!--skills section-->
+        <th class="skillsSection" id="skillsID" data-aos="fade-right">
+          <div>
+            <h1>Knowledge &amp; Skills </h1>
+            <p>Languages/Frameworks:
+              <i>C, HTML, CSS, Swift, Java, Javascript.</i>
+            </p>
+            <p>Development Environment:
+              <i>Windows, OSX/MacOS, Linux/Unix.</i>
+            </p>
+            <p>Tools:
+              <i>XCode, IntelliJ, Visual Studio, Photoshop C6, Sketch 3.</i>
+            </p>
+          </div>
+        </th>
+        <!--contact section-->
+        <th class="contact" id="contactID" data-aos="fade-left">
+          <div>
+            <h1>Contact</h1>
+            <p>Guelph, On N1G2W6</p>
+            <p>Canada</p>
+            <p>1-(519)-731-5289</p>
+            <p>mohammav@uoguelph.ca</p>
+          </div>
+        </th>
+      </table>
+    </section>
 
-            <!--Footer-->
-            <footer class="footer">
-                <p>&copy; Vicky Mohammad 2017</p>
-            </footer>
-            <!--end of container-->    
-        </div>    
-    </body>
+    <!--Footer-->
+    <footer class="footer">
+      <p>&copy; Vicky Mohammad 2017</p>
+    </footer>
+    <!--end of container-->
+  </div>
+
+  <!-- animation and etc -->
+  <script src="script.js"></script>
+</body>
+
 </html>

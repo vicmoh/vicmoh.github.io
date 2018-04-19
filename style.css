@@ -473,7 +473,7 @@ hr{
         height: 100px;
     }
     /*make the cover stationary for mobile*/
-    .head{
+    /* .head{
         height: 100%;
         width: 100%;
         margin:auto;
@@ -486,7 +486,7 @@ hr{
     .skills{
         background: url(assets/macbook-table-compressed.jpg) no-repeat 100%;
         background-size: cover;
-    }
+    } */
     .popup{
         padding-right: 20px;
         padding-left: 20px;

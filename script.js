@@ -6,18 +6,27 @@ Readme: This code is for scrolling animation
 
 /*for the page scrolling when click*/
 $(document).ready(function () {
-  //animate the button scroll
   animateScroll();
-  // make tans to solid nav bar when scroll
   transToSolidNavBar();
-  //change animation
   changeAosAt(1000);
+  loadImg(".load");
 });
 
 /************************************************************
-custom functions
+functions
 ************************************************************/
 
+function loadImg(query){
+  $(query).css("opacity", 1);
+  setTimeout(function(){
+    $(query).css("opacity", 0);
+  }, 400);
+  setTimeout(function(){
+    $(query).remove();
+  }, 1000);
+}//end func
+
+// for the nav bar to change opcity when scroll
 function transToSolidNavBar() {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
@@ -30,6 +39,7 @@ function transToSolidNavBar() {
   });
 }//end func
 
+// scroll animation
 function animateScroll() {
   // Add smooth scrolling to all links and .not for close
   $(".navpage a")
@@ -55,6 +65,7 @@ function animateScroll() {
     });
 }//end func
 
+// function to set play scroll video
 function playScrollVideo() {
   var frameNumber = 0, // start video at frame 0
     // lower numbers = faster playback
@@ -78,7 +89,7 @@ function playScrollVideo() {
   window.requestAnimationFrame(scrollPlay);
 }//end func
 
-//removeattributees for aos
+//remove attributees for aos
 function changeAosAt(width) {
   var dimension = window.matchMedia("(max-width: +" + width + "px)");
   if (dimension.matches) {//when media size match do something

@@ -133,7 +133,10 @@ html, body{
     top: 0;
     background-size: cover;
     z-index: -1;
-    transition-delay: all 1.5s ease-out;
+    /* transition-delay: all 1.5s ease-out; */
+    /* transition-duration: 0.2s;
+    transition: ease-in;
+    transition-delay: 0.2s; */
 }
 /*inner table cell*/
 .head .inner{

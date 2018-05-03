@@ -17,7 +17,7 @@ Readme: This code is the HTML content of my web resume
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 
   <!-- aos lib -->
-  <link rel="stylesheet" href="aos/dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
   <script src="aos/dist/aos.js"></script>
 
   <!-- view ports -->
@@ -30,12 +30,6 @@ Readme: This code is the HTML content of my web resume
 <!--create main front end-->
 
 <body>
-  <script>
-    AOS.init({
-      duration: 1200,
-    })
-  </script>
-  
   <!-- loading program -->
   <section>
     <style>
@@ -46,9 +40,9 @@ Readme: This code is the HTML content of my web resume
         width: 100% !important;
         position: fixed !important;
         z-index: 100 !important;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.2s;
+        transition-duration: 0.2s !important;
+        transition-timing-function: ease-in !important;
+        transition-delay: 0.2s !important;
       }
     </style>
     <div class="load"></div>
@@ -56,12 +50,11 @@ Readme: This code is the HTML content of my web resume
 
   <!-- load imgs to buffer -->
   <Section>
-    <div class="imageBuffer" style="visibility: hidden;position: fixed;z-index: -100;">
+    <div class="imageBuffer" style="visibility: hidden;position: fixed;z-index: -10;">
       <!-- for example, javascript will insert img here like this -->
       <img src="assets/blurredimg-compressed.gif">
     </div>
   </Section>
-  
 
   <!--index for tab bar-->
   <section class="navbar">
@@ -121,10 +114,10 @@ Readme: This code is the HTML content of my web resume
     <!--name and profile-->
     <section class="head">
       <div class="inner">
-        <div class="name animated bounceInUp" data-aos="fade-down">
-          <img class="avatar-circle" src="assets/ProfilePic.JPG" alt="profile pic">
-          <h1>Vicky Mohammad</h1>
-          <a class="btn">Get Resume</a>
+        <div class="name animated bounceInUp">
+          <img class="avatar-circle" src="assets/ProfilePic.JPG" alt="profile pic" data-aos="fade-down" data-aos-delay="1500">
+          <h1 data-aos="fade-right" data-aos-delay="2000">Vicky Mohammad</h1>
+          <a data-aos="fade-up" data-aos-delay="2500" class="btn">Get Resume</a>
           <!--href="Vicky Mohammad's Resume.pdf"-->
         </div>
       </div>
@@ -363,6 +356,11 @@ Readme: This code is the HTML content of my web resume
 
   <!-- animation and etc -->
   <script src="script.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
 </body>
 
 </html>

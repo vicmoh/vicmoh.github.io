@@ -176,7 +176,6 @@ html, body{
     text-shadow: 2px 2px black;
     box-shadow: 2px 2px black;
     /*fade*/
-    transition: all 0.3s ease-out;
 }
 .btn:hover{
     opacity: 0.55;

@@ -20,10 +20,10 @@ function loadImg(query){
   $(query).css("opacity", 1);
   setTimeout(function(){
     $(query).css("opacity", 0);
-  }, 400);
+  }, 450);
   setTimeout(function(){
     $(query).remove();
-  }, 1000);
+  }, 1100);
 }//end func
 
 // for the nav bar to change opcity when scroll

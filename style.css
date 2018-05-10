@@ -17,6 +17,25 @@ html, body{
     width: 100%;
     -webkit-text-size-adjust: 100%;
 }
+.centerContent{
+    max-width: 50em;
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 300;
+    color: #666;
+}
+/* remove the blue outlilne */
+input:focus {
+    outline:0;
+}
+button:focus {
+    outline:0;
+}
+textarea:focus{
+    outline:0;
+}
 .links{
     text-decoration: none;
     color: #666;
@@ -385,6 +404,43 @@ html, body{
     max-height: 30%;
     overflow: auto;
 }
+/******************************************/
+/* email contact */
+.emailContact{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url(assets/balloon.jpg) no-repeat fixed 100%;
+    margin:auto;
+    top: 0;
+    background-size: cover;
+    z-index: -1;
+}
+.inputSize {
+    height: 30px;
+    width: 90%;
+    font-size: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: black;
+    border-bottom-width: 1px !important;
+  }
+  .textareaSize{
+    height: 10em;
+    width: 90%;
+    font-size: 100%;
+    resize: none;
+    border-color: black;
+    border: none;
+  }
+  .ralewayFont{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  .emailContainer{
+    background-color: white;
+    border-radius: 10px;
+  }
+
 /******************************************/
 /*footer*/
 .footer{

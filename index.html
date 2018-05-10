@@ -11,9 +11,8 @@ Readme: This code is the HTML content of my web resume
   <title>Vicky Mohammad's Web Resume</title>
   <!-- my libs -->
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
 
-  <!-- ajax libs -->
+  <!-- jq libs -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 
   <!-- aos lib -->
@@ -81,7 +80,7 @@ Readme: This code is the HTML content of my web resume
       <a href="#personalID" id="index" data-aos="fade" data-aos-delay="2550" data-aos-once="true">Personal</a>
       <a href="#experienceID" id="index" data-aos="fade" data-aos-delay="2700" data-aos-once="true">Experience</a>
       <a href="#skillsID" id="index" data-aos="fade" data-aos-delay="2850" data-aos-once="true">Skills</a>
-      <a href="#popup1" id="index" data-aos="fade" data-aos-delay="3000" data-aos-once="true">Contact</a>
+      <a href="#emailContactID" id="index" data-aos="fade" data-aos-delay="3000" data-aos-once="true">Contact</a>
     </div>
   </section>
 
@@ -167,41 +166,70 @@ Readme: This code is the HTML content of my web resume
     </section>
 
     <!-- school  -->
-    <!-- <Section class="experience"> -->
-      <!--education experience-->
-      <!-- <div class="row" data-aos="fade-right" data-aos-once="true">
-        <div class="educationHeader">
-          <h2>Candidate for Bachelors of
-            <i>Computer Science</i>
-          </h2>
-          <p>University of Guelph, Guelph, Ontario</p>
+    <Section>
+      <div class="experience">
+        <div class="row" data-aos="fade-right" data-aos-once="true">
+          <div class="educationHeader">
+            <h2>Candidate for Bachelors of
+              <i>Computer Science</i>
+            </h2>
+            <p>University of Guelph, Guelph, Ontario</p>
+          </div>
+          <div class="grid-2" style="padding-bottom: 1em;">
+            <ul>
+              <h2>CIS2520 - Data Structures</h2>
+              <li>Acquired skills in building and implementing data struct APIs such as lists, stacks, queues, priority queues,
+                hashmaps, binary trees, as well as AVL trees.</li>
+              <li>Knowledge of using pointers in C, such as managing and allocating memory efficiently.</li>
+              <li>Understanding and generating sorting algorithm including bubble sort, selection sort, insert sort, merge sort,
+                heap sort algorithm, and other advanced sorting algorithms.</li>
+
+              <h2>CIS2430 - Object Oriented Programing</h2>
+              <li>Gained experiences in creating and comprehensively learned the use of objects from class libraries, user-defined
+                objects, inheritance, modularity, generic code, components, collections, and containers.</li>
+              <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
+              <li>Earned proficient skills in making a graphic user interface.</li>
+
+              <h2>CIS3490 - The Analysis and Design of Computer Algorithms</h2>
+              <li>Learned different </li>
+              <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
+              <li>Earned proficient skills in making a graphic user interface.</li>
+            </ul>
+          </div>
         </div>
-        <div class="grid-2">
-          <ul> -->
-            <!--CIS2520-->
-            <!-- <h2>CIS2520 - Data Structures</h2>
-            <li>Acquired skills in building and implementing data struct APIs such as lists, stacks, queues, priority queues,
-              hashmaps, binary trees, as well as AVL trees.</li>
-            <li>Knowledge of using pointers in C, such as managing and allocating memory efficiently.</li>
-            <li>Understanding and generating sorting algorithm including bubble sort, selection sort, insert sort, merge sort,
-              heap sort algorithm, and other advanced sorting algorithms.</li> -->
-            <!--CIS2420-->
-            <!-- <h2>CIS2430 - Object Oriented Programing</h2>
-            <li>Gained experiences in creating and comprehensively learned the use of objects from class libraries, user-defined
-              objects, inheritance, modularity, generic code, components, collections, and containers.</li>
-            <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
-            <li>Earned proficient skills in making a graphic user interface.</li> -->
-            <!--CIS3490-->
-            <!-- <h2>CIS3490 - The Analysis and Design of Computer Algorithms</h2>
-            <li>Learned different </li>
-            <li>Understanding the main fundamental concept of object-orientated such as polymorphism, encapsulation, and abstraction.</li>
-            <li>Earned proficient skills in making a graphic user interface.</li>
-          </ul>
-          </ul>
-        </div>
-        <hr>
       </div>
-    </Section> -->
+    </Section>
+
+    <!--Skills and contacts-->
+    <section class="skills" data-aos="fade" data-aos-once="true" id="skillsID">
+      <table class="skillsTable">
+        <!--skills section-->
+        <th class="skillsSection" data-aos="fade-right">
+          <div>
+            <h1>Knowledge &amp; Skills </h1>
+            <p>Languages/Frameworks:
+              <i>C, Java, Swift, Javascript, HTML, CSS.</i>
+            </p>
+            <p>Development Environment:
+              <i>Windows, MacOS, Linux.</i>
+            </p>
+            <p>Tools:
+              <i>Visual Studio, IntelliJ, XCode, Photoshop C6, Sketch.</i>
+            </p>
+          </div>
+        </th>
+        <!--contact section-->
+        <th class="contact" id="contactID" data-aos="fade-left">
+          <div>
+            <h1>Contact</h1>
+            <p>Guelph, On N1G2W6</p>
+            <p>Canada</p>
+            <p>1-(519)-731-5289</p>
+            <p>mohammav@uoguelph.ca</p>
+          </div>
+        </th>
+      </table>
+    </section>
 
     <!--body content-->
     <section class="bodyContent">
@@ -324,35 +352,22 @@ Readme: This code is the HTML content of my web resume
       <!--end of body section-->
     </section>
 
-    <!--Skills and contacts-->
-    <section class="skills" data-aos="fade" data-aos-once="true">
-      <table class="skillsTable">
-        <!--skills section-->
-        <th class="skillsSection" id="skillsID" data-aos="fade-right">
-          <div>
-            <h1>Knowledge &amp; Skills </h1>
-            <p>Languages/Frameworks:
-              <i>C, Java, Swift, Javascript, HTML, CSS.</i>
-            </p>
-            <p>Development Environment:
-              <i>Windows, MacOS, Linux.</i>
-            </p>
-            <p>Tools:
-              <i>Visual Studio, IntelliJ, XCode, Photoshop C6, Sketch.</i>
-            </p>
+    <!-- email contact section -->
+    <section class="emailContact" id="emailContactID">
+      <div class="centerContent" style="padding-top: 3em;padding-bottom: 5em;">
+        <div class="emailContainer">
+          <h1 style="padding-top: 2em;">Contact</h1> 
+          <div style="padding-top: 1em;">
+            <input class="inputSize ralewayFont" placeholder="Name">
           </div>
-        </th>
-        <!--contact section-->
-        <th class="contact" id="contactID" data-aos="fade-left">
-          <div>
-            <h1>Contact</h1>
-            <p>Guelph, On N1G2W6</p>
-            <p>Canada</p>
-            <p>1-(519)-731-5289</p>
-            <p>mohammav@uoguelph.ca</p>
+          <div style="padding-top: 2em;">
+            <input class="inputSize ralewayFont" placeholder="Email">
           </div>
-        </th>
-      </table>
+          <div style="padding-top: 3em; padding-bottom: 3em;">
+            <textarea class="textareaSize ralewayFont" placeholder="Enter your message here..."></textarea>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Footer-->
@@ -363,7 +378,7 @@ Readme: This code is the HTML content of my web resume
   </div>
 
   <!-- animation and etc -->
-  <script src="script.js"></script>
+  <script type="text/javascript"src="script.js"></script>
   <script>
     AOS.init({
       duration: 1200,

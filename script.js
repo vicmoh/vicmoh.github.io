@@ -16,6 +16,7 @@ $(document).ready(function () {
 functions
 ************************************************************/
 
+// load white page for fade effect
 function loadImg(query){
   $(query).css("opacity", 1);
   setTimeout(function(){

@@ -1,0 +1,107 @@
+/**************************************************
+ * @author Vicky Mohammad
+ * @description css for the navigation bar
+ **************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+.navBar{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    padding-top: 40px;
+    color: #666;
+}
+
+.navTools{
+    position: relative;
+}
+
+.navLogo{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    height: 100px;
+    z-index: 101;
+}
+
+.navSocial{
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    text-decoration: none !important;
+    outline: none;
+}
+
+.navSocial a{
+    text-decoration: none !important;
+}
+
+.navSocial img{
+    height: 30px;
+}
+
+.navLocation{
+    position: absolute;
+    top: -20px;
+    right: 470px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.navPhone{
+    position: absolute;
+    top: -20px;
+    right: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 9px;
+    border: 1px solid #666;
+}
+
+.buttonCurrentPageIndicator{
+    border-bottom: 3px solid red;
+}
+
+.navButtonLink{
+    border-bottom: 3px solid white;
+}
+
+.navBarButtons{
+    text-transform: uppercase;
+    top: 0;
+    background-color: white;
+    opacity: 1;
+    text-decoration: none;
+    /* padding */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.navBarButtons a{
+    text-decoration: none;
+    padding: 10px;
+    color: #666;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navBarButtons a:hover{
+    border-bottom: 3px solid rgb(0, 100, 255);
+}

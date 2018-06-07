@@ -3,7 +3,7 @@
  * @description css style for custom google map
  **************************************************/
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     header {
       height: 300px;
       line-height: 300px;
@@ -30,10 +30,12 @@
   #cd-google-map {
     position: relative;
   }
-  #cd-google-map address {
-    position: absolute;
+  /* #cd-google-map */
+  address {
+    /* position: absolute; */
+    margin: 0;
     width: 100%;
-    bottom: -16px;
+    /* bottom: 0px; */
     left: 0;
     padding: 1em 1em;
     background-color: rgba(210, 105, 105, 1);
@@ -42,7 +44,8 @@
     font-size: 0.8125rem;
   }
   @media only screen and (min-width: 768px) {
-    #cd-google-map address {
+    /* #cd-google-map  */
+    address {
       font-size: 15px;
       font-size: 0.9375rem;
       text-align: center;

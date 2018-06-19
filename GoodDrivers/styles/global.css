@@ -1,0 +1,26 @@
+/**************************************************
+ * @author Vicky Mohammad
+ * @description this css is used for global styling
+ for all html files
+ **************************************************/
+
+ /* cursive fonts */
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Marck+Script|Pacifico|Sacramento');
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Marck Script', cursive;
+*/
+
+/* dont use black text use dark gray exept for headings, because its easy on th eye*/
+/* its one of the rule for a good quality website, so default will be dark grey */
+
+h1, p{
+    color: #666;
+}
+
+.blueBackground{
+    background-color: rgb(120, 195, 230) !important;
+}

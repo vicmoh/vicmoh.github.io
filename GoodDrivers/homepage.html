@@ -1,0 +1,554 @@
+<!-- 
+  @author Vicky Mohammad
+  @description main home page
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--header-->
+
+<head>
+  <title>Good Drivers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+
+  <!--my important custom header and footer-->
+  <link rel="stylesheet" type="text/css" href="styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <!-- other custom css -->
+  <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+  <link rel="stylesheet" type="text/css" href="styles/hover.css">
+  <link rel="stylesheet" type="text/css" href="styles/cardflip.css">
+  <link rel="stylesheet" type="text/css" href="styles/map.css">
+
+  <!--aos snik-->
+  <link rel="stylesheet" href="aos/dist/aos.css">
+  
+
+  <!--google fonts-->
+  <!-- 
+  font-family: 'Pacifico', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Marck Script', cursive;
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Marck+Script|Pacifico|Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Rozha+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Oswald|Raleway" rel="stylesheet">
+
+  <!-- view port for phones -->
+  <!-- <meta name="viewport" content="width=720"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+</head>
+
+<body>
+  <!-- ****************************** for fade transition on page -->
+  <section>
+    <style>
+      .loadingPage {
+        background: white;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.2s;
+        opacity: 1;
+      }
+    </style>
+    <div class="loadingPage"></div>
+  </section>
+
+  <!-- ****************************** navigatio bar -->
+  <section class="navBar">
+    <div class="container navTools">
+      <!-- logo -->
+      <img class="navLogo" src="assets/logo.png" data-aos="fade" data-aos-delay="2000" data-aos-duration="2000">
+      <!-- social media link -->
+      <div class="navSocial" data-aos="fade" data-aos-delay="2000" data-aos-duration="2000">
+        <a href=""><img src="assets/facebook.png"></a>
+        <a href=""><img src="assets/twitter.png"></a>
+        <a href=""><img src="assets/google.png"></a>
+        <a href=""><img src="assets/youtube.png"></a>
+      </div>
+      <!-- location and phone number -->
+      <p class="navPhone" data-aos="fade" data-aos-delay="2000" data-aos-duration="2000">Missisauga: 905-568-8747</p>
+      <a class="navLocation" href="location.html" role="button" data-aos="fade" data-aos-delay="2000" data-aos-duration="2000">
+        <i>Change Location</i>
+      </a>
+      <!-- nav buttons -->
+      <div class="navBarButtons">
+        <a data-aos="fade" data-aos-delay="1100" class="buttonCurrentPageIndicator" href="">Home</a>
+        <a data-aos="fade" data-aos-delay="1200" class="navButtonLink" href="http://www.gooddrivers.ca/driving-school-mississauga.php">About Us</a>
+        <div class="btn-group" role="group">
+          <a data-aos="fade" data-aos-delay="1300" class="navButtonLink dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Program &amp; Fees</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/ministry-approved-driving-schools.php">Ministry Approved Beginner Driver Education Program</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/Enhanced_Ministry_Approved_Driver_Education_Program.php">Enhanced Ministry Approved Driver Education Program</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/G_Preparation_Packages.php">G Preparation Pakages</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/G2_Preparation_Packages.php">G2 Preparation Pakages</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/driver-training-for-teenagers.php">Winter Driving Training</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/driver-training-for-seniors.php">Driver Training for Seniors</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/driver-improvement-courses-Mississauga.php">Driver Improvement Course</a>
+          </div>
+        </div>
+        <div class="btn-group" role="group">
+          <a data-aos="fade" data-aos-delay="1400" class="navButtonLink dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Course Schedule</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/driving-course-mississauga.php">Course Start Dates</a>
+            <a class="dropdown-item" href="http://www.gooddrivers.ca/Course_Calendar.php">Course Calendar</a>
+          </div>
+        </div>
+        <a data-aos="fade" data-aos-delay="1500" class="navButtonLink" href="http://www.gooddrivers.ca/driving-lessons-mississauga.php">FAQs</a>
+        <a data-aos="fade" data-aos-delay="1600" class="navButtonLink" href="http://www.gooddrivers.ca/mississauga-driving-schools.php">Gallery</a>
+        <a data-aos="fade" data-aos-delay="1700" class="navButtonLink" href="http://www.gooddrivers.ca/Testimonials.php">Testimonials</a>
+        <a data-aos="fade" data-aos-delay="1800" class="navButtonLink" href="http://www.gooddrivers.ca/driver-training-schools-mississauga-for-insurance-discount.php">Contact Us</a>
+        <a data-aos="fade" data-aos-delay="1900" class="navButtonLink" href="http://www.gooddrivers.ca/franchise_information.php">Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- carousel section -->
+  <section class="homeCarousel">
+    <!-- carousel img slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <!-- carousel inner -->
+      <div class="carousel-inner">
+        <!-- slide 1 -->
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/action-asphalt-auto.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome!</h1>
+              <h1>Good Drivers</h1>
+              <p>Teaching since 1981</p>
+              <p>Celebrating over 30 years of business!</p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="" role="button">Apply Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- slide 2 -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/action-automotive-blur.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption carouselRight">
+              <div style="text-align: left">
+                <h1 style="color: red;">We Belive in</h1>
+                <p>&#10003; Quality &amp; Commitment</p>
+                <p>&#10003; Reliable &amp; Affordable Service</p>
+                <p>&#10003; With a Smile!</p>
+                <p>
+                  <a class="btn btn-lg btn-danger" href="" role="button">About Us</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/automobiles-automotives-black-and-white.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption carouselLeft">
+              <div style="text-align: left">
+                <h1 style="color: lightblue;">Execellent Result!</h1>
+                <p>With 90% First Time Pass Rate!</p>
+                <p>Our instructors are highly experienced, professional and fluent in English</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="" role="button">Contact Us</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide controller -->
+        <div class="control-box">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  </section>
+  <!-- end carousel -->
+
+  <!-- section for -->
+  <section class="container" style="padding-top: 5em">
+    <div class="row">
+      <!-- card flip 1 -->
+
+      <div class="cardflip">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');" data-aos="fade-right" data-aos-once="true" data-aos-delay="2000">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card" style="width:20rem;">
+                <img class="card-img-top img- fluid" src="assets/ministry.jpg" alt="card image">
+                <div class="card-body">
+                  <h4 class="card-title">Ministry Approved Driver Training Courses</h4>
+                  <p class="card-text">We offer three execellent ministry approved trainning programs that starts every month.</p>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card" style="width:20rem;">
+                <div class="card-header">
+                  <!-- This is a Header -->
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Ministry Approved Driver Training Courses</h4>
+                  <p class="card-text">Three programs start every month, Saturday &amp; Sunday or Weekday Evening classes are available.</p>
+                  <a href="#" class="btn btn-info btn-danger btn-md">Read More</a>
+                </div>
+                <div class="card-footer">
+                  <!-- This is a Footer -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card flip 2 -->
+      <div class="cardflip">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');" data-aos="fade-right" data-aos-once="true" data-aos-delay="2500">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card" style="width:20rem;">
+                <img class="card-img-top img- fluid" src="assets/adventure-baltic-sea-car.jpg" alt="card image">
+                <div class="card-body">
+                  <h4 class="card-title">New to Canada? We’re here to help!</h4>
+                  <p class="card-text">We realize that settling in a new country can be difficult. We are here to help!</p>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card" style="width:20rem;">
+                <div class="card-header">
+                  <!-- This is a Header -->
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">New to Canada? We’re here to help!</h4>
+                  <p class="card-text">We realize that settling in a new country is difficult, especially without proper guidance. Good Drivers
+                    has an easy 3 step process to help you get your license.</p>
+                  <a href="#" class="btn btn-info btn-danger btn-md">Read More</a>
+                </div>
+                <div class="card-footer">
+                  <!-- This is a Footer -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card flip 3 -->
+      <div class="cardflip">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');" data-aos="fade-right" data-aos-once="true" data-aos-delay="3000">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card" style="width:20rem;">
+                <img class="card-img-top img- fluid" src="assets/adult-automotive-blur.jpg" alt="card image">
+                <div class="card-body">
+                  <h4 class="card-title">G2 &amp; G License Small Packages</h4>
+                  <p class="card-text">This packages will help you prepare which includes high quality tests, reviews, lessons and more.</p>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card" style="width:20rem;">
+                <div class="card-header">
+                  <!-- This is a Header -->
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">G2 &amp; G License Small Packages</h4>
+                  <p class="card-text">Packages include booking of a test appointment, review lessons prior to the test, a refresher lesson on
+                    the day of the test to get you acquainted with the test area and use of our vehicle for the test.</p>
+                  <a href="#" class="btn btn-info btn-danger btn-md">Read More</a>
+                </div>
+                <div class="card-footer">
+                  <!-- This is a Footer -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonial section with pylon img -->
+  <style>
+    .testimonials {
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/asphalt-blacktop-daytime-dark.jpg) no-repeat fixed 100%;
+      background-position: center;
+      height: 550px;
+      width: 100%;
+      margin: auto;
+      background-size: cover;
+      /* filter: brightness(70%); */
+    }
+
+    .testimonialHeading{
+      position: absolute;
+      color: white;
+      top: 50px;
+      font-family: 'Pacifico', cursive;
+      /* font-family: 'Dancing Script', cursive; */
+      /* font-family: 'Great Vibes', cursive; */
+      /* font-family: 'Sacramento', cursive; */
+      /* font-family: 'Marck Script', cursive; */
+    }
+
+    .testimonialBody{
+      position: absolute;
+      top: 150px;
+      left: 50px;
+      color: white;
+      font-family: 'Marck Script', cursive;
+    }
+
+    .testimonialQuotes{
+      left: 100px;
+      width: 600px;
+      height: 300px;
+    }
+    
+    .testimonialQuotes p{
+      width: 400px;
+      color: white;
+    }
+
+    .testimonials .col-6{
+      left: 450px;
+    }
+
+  </style>
+  <section class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <!-- 3 of 3 (wider)-->
+          
+          <!-- heading for testimonial -->
+          <div class="testimonialHeading">
+            <h1 style="color: white;">Here's what our students say </h1>
+          </div>
+          
+          <!-- body section for testimonial -->
+          <div class="testimonialBody">
+            <!-- carousel of testimonial quotes -->
+            <div id="carouselContent" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active testimonialQuotes">
+                  <p>
+                    "Thank you Good Drivers special thx to Milad my in-car teacher he was so patient and I passed my G2 first time. The classroom
+                    was sooooo informative thank-you Monika &amp; Dal." Rhea Charangth, St. Francis Xavier Secondary School
+                    "I attended the evening classes at this driving school and they were very informative. Monika is an excellent
+                    instructor - helpful, answered all my questions and made me feel really comfortable. My in-car instructor
+                    was Deepak and he was so patient and friendly, he never yelled at me, gave me very clear instructions and
+                    he is so funny! I got my G2 on my first try at Etobicoke test centre. Thank you Good Drivers!" - Lauren
+                    Baig, McMaster University
+                  </p>
+                </div>
+                <div class="carousel-item testimonialQuotes">
+                  <p>"I loved the way the course was taught, it was easy to learn and interactive and they used different methods to learn (visuals,
+                    power points, video, group lessons, books). Really great teacher." - Prity Naik, Gordon Graydon Memorial Secondary School</p>
+                  <p>
+                    "I had a great experience with Good Drivers thx to my in-class teacher Monika &amp; my car teacher Rita they were both so
+                    experienced and made me feel so comfortable. Passed my G2 test today in Brampton. Thank-you Good Drivers! Keep doing
+                    what your doing." - Edward Farwostski</p>
+                </div>
+                <div class="carousel-item testimonialQuotes">
+                  <p>
+                    "This was a very informative and educational course that taught me a lot about driving that I did not know. It is amazing
+                    how much I learned within 4 days. I am glad I took this course because I have learned much more than I would have without
+                    it and I suggest that anyone going to get their licence should take this course beforehand. I liked that it was condensed
+                    into 4 days, this was very convenient for me because I have already waited 2 years to do this so I wanted to get it over
+                    with. The location was also convenient for me. Great in-class instructor." - Jahmila Dawkins, Sheridan College </p>
+                </div>
+              </div>
+              <!-- controller for the testimonial quotes -->
+              <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- end of testimonial body-->
+        </div>
+        <!-- end column -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+
+  <!-- schedule section -->
+  <style>
+    .schedule p{
+      margin: 0;
+      padding: 0;
+      color: #666;
+    }
+    .schedule{
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+    .awardImage{
+      height: 400px;
+    }
+  </style>
+  <section class="container schedule">
+    <div class="">
+      <div class="row">
+        <!-- award img -->
+        <div class="col">
+          <img class="awardImage" src="assets/award2015cut.png" alt="">
+        </div>
+        <!-- why choose us -->
+        <div class="col">
+          <h1 style="color: black;">Why Choose Us</h1>
+          <p>&#10003; Ministry-Approved BDE Course Provider</p>
+          <p>&#10003; Insurance Reduction</p>
+          <p>&#10003; Courses Available Weekdays/Weekends</p>
+          <p>&#10003; 4-Day Courses Every Week</p>
+          <p>&#10003; Flexible Hours</p>
+          <p>&#10003; Affordable</p>
+          <p>&#10003; Easy Payment Plans</p>
+          <p>&#10003; 100% Client Satisfaction</p>
+          <p>&#10003; Male &amp; Female Instructors Available</p>
+          <p>&#10003; Highly Experienced Instructors</p>
+          <p>&#10003; Patient &amp; Courteous Staff</p>
+          <p>&#10003; Brampton Driver Training</p>
+        </div>
+        <!-- schedule -->
+        <div class="col-5">
+          <div class="scheduleOutline">
+            <div class="container">
+              <!-- <h2>Class Start</h2>
+              <p></p> -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Weekend Classes</th>
+                    <th>4 Day Condensed Course</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>June 9, 10, 16 &amp; 17</p>
+                      <p>June 23, 24, July 7 &amp; 8</p>
+                      <p>July 14, 15, 21 &amp; 22</p>
+                      <p>July 28, 29, Aug 4 &amp; 5</p>
+                      <p>(2 weekends)</p>
+                      <p>9:00am-2:30pm</p>
+                    </td>
+                    <td>
+                      <p>July 17, 18, 19, &amp; 20</p>
+                      <p>Aug 7, 8, 9, &amp; 10</p>
+                      <p>9:00am-2:30pm</p>
+                    </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- google map -->
+  <section class="" id="cd-google-map">
+    <div id="google-container"></div>
+    <div id="cd-zoom-in"></div>
+    <div id="cd-zoom-out"></div>
+  </section>
+  <address>3025 Hurontario St #104, Mississauga, ON L5A 2H1</address>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- 1 of 3 -->
+          <div><a href="http://www.gooddrivers.ca/ministry-approved-driving-schools.php"><p>Program &amp; fees</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Winter_Driving_Training.php"><p>Winter driving tips</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Reasons_Good_Drivers.php"><p>Why choose Good Drivers?</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Register.php"><p>Register online for driving course</p></a></div>
+          <div><a href="https://www.google.co.in/search?q=good+drivers+mississauga&lrd=0x882b46fb54f07409:0x16db5078e3977004,1,&cad=h"><p>Check out what our customers say about us</p></a></div>
+        </div>
+        <div class="col">
+          <!-- 2 of 3 -->
+          <div><a href="http://www.gooddrivers.ca/Course_Calendar.php"><p>Course calendar</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Course_Start_Dates.php"><p>Course start date</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Incar_Curriclum.php"><p>In-car lessons</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/Incar_Lesson.php"><p>In-class curriculum</p></a></div>
+          <div><a href="http://www.gooddrivers.ca/franchise_information.php"><p>Franchise information</p></a></div>
+        </div>
+        <div class="col addressInformation">
+          <!-- 3 of 3 -->
+          <div><p>Art of Good Drivers Inc.</p><div>
+          <div><p>3025 Hurontario St. Suite 104 (Ground Floor) Mississauga L5A 2H1</p><div>
+          <div><p>Call: 905 276 6066 or 905 568 8747 </p><div>
+          <div><p><u>info@gooddrivers.ca</u></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+        <p style="color: white;">Copyright 2018 Art of Good Drivers Inc.</p>
+        <!-- <p style="color: white;">&copy; Vicky Mohammad 2018</p> -->
+    </div>
+  </footer>
+  
+    <!-- Load jquery, bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="aos/dist/aos.js"></script>
+
+  <script src="scripts/pageload.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjhLy-RA9wKhUfq_zdzJcrHCxkEAC50ZI&callback=initMap"
+  type="text/javascript"></script>
+  <script src="scripts/map.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+</body>
+
+</html>

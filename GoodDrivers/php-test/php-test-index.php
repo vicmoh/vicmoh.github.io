@@ -305,7 +305,7 @@
       position: absolute;
       top: 150px;
       color: white;
-      font-family: 'Marck Script', cursive;
+      /* font-family: 'Marck Script', cursive; */
       left: 370px;
     }
 
@@ -416,23 +416,25 @@
                     Baig, McMaster University
                   </p>
                 </div>
-                <div class="carousel-item testimonialQuotes">
-                  <p>"I loved the way the course was taught, it was easy to learn and interactive and they used different methods to learn (visuals,
-                    power points, video, group lessons, books). Really great teacher." - Prity Naik, Gordon Graydon Memorial Secondary School</p>
-                  <p>
-                    "I had a great experience with Good Drivers thx to my in-class teacher Monika &amp; my car teacher Rita they were both so
-                    experienced and made me feel so comfortable. Passed my G2 test today in Brampton. Thank-you Good Drivers! Keep doing
-                    what your doing." - Edward Farwostski</p>
-                </div>
-                <div class="carousel-item testimonialQuotes">
-                  <p>
-                    "This was a very informative and educational course that taught me a lot about driving that I did not know. It is amazing
-                    how much I learned within 4 days. I am glad I took this course because I have learned much more than I would have without
-                    it and I suggest that anyone going to get their licence should take this course beforehand. I liked that it was condensed
-                    into 4 days, this was very convenient for me because I have already waited 2 years to do this so I wanted to get it over
-                    with. The location was also convenient for me. Great in-class instructor." - Jahmila Dawkins, Sheridan College </p>
-                </div>
-              </div>
+
+                <!-- php for the testimonials -->
+                <?php  
+                  $qr="select * from gallery where album_name='Home_Testimonial' and page_type='Home_Testimonial_Desktop' "; // echo $qr;
+                  $rej1=mysql_query($qr) or die(mysql_error());  
+                  $img_src=$image_discrip=$image_name=$page_type_d="";
+                  while($reji=mysql_fetch_array($rej1)){   
+                    $img_src=$reji['image'];	
+                    $image_discrip=$reji['image_discrip'];	
+                    $sub_detail=$reji['sub_detail'];  
+                    // tets the info here
+                    echo "<div class='carousel-item testimonialQuotes'><p>";
+                    echo $image_discrip;
+                    echo "<span>";
+                    echo $sub_detail;
+                    echo "</span></p></div>";
+                  }
+                ?>
+
               <!-- controller for the testimonial quotes -->
               <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,0 +1,194 @@
+/**************************************************
+ * @author Vicky Mohammad
+ * @description css for the navigation bar
+ **************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.navBar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #666;
+}
+
+.navTools {
+    position: relative;
+}
+
+.navLogo {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    height: 100px;
+    z-index: 101;
+}
+
+.navSocial {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    text-decoration: none !important;
+    outline: none;
+}
+
+.navSocial a {
+    text-decoration: none !important;
+}
+
+.navSocial img {
+    height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.navLocation {
+    position: absolute;
+    top: -20px;
+    right: 470px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.navPhone {
+    position: absolute;
+    top: -20px;
+    right: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 9px;
+    border: 1px solid #666;
+}
+
+.navButtonLink {
+    /* border-bottom: 3px solid white; */
+}
+
+/* .navBarButtons .btn-group{
+    border-bottom: 3px solid white;
+} */
+
+.navBarButtons {
+    text-transform: uppercase;
+    top: 0;
+    background-color: white;
+    opacity: 1;
+    text-decoration: none;
+    /* padding */
+    padding-top: 30px;
+    /* padding-bottom: 20px; */
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    text-align: right;
+    margin-left: 110px;
+}
+
+.navBarButtons a {
+    text-decoration: none;
+    padding: 10px;
+    /* padding-left: 5px; */
+    color: #666;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin-left: 1px;
+    margin-right: 1px; */
+}
+
+.dropdown-toggle{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.navBarButtons a:hover {
+    border-bottom: 3px solid rgb(0, 100, 255);
+}
+
+/* this prevent the navbar */
+/* from covering the top of the page */
+.navPreventCover{
+    padding-top: 8em;
+}
+
+/* for  the desktop */
+@media(min-width: 799px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .navBar {
+        display: unset;
+    }
+}
+
+/* schrink the logo */
+@media(max-width: 1200px) {
+    .navLogo {
+        height: 40px;
+    }
+    .navBar{
+        padding-bottom: 10px;
+    }
+    .navBarButtons {
+        text-transform: uppercase;
+        top: 0;
+        background-color: white;
+        opacity: 1;
+        text-decoration: none;
+        /* padding */
+        padding-top: 30px;
+        padding-bottom: 10px;
+        /* padding-right: 10px;
+        padding-left: 10px; */
+        /*text-align: right;*/
+        text-align: center;
+        margin-left: 0px;
+    }
+    .navBarButtons a{
+        padding-bottom: 0px !important;
+    }
+}
+
+/* for mobile */
+@media(max-width: 800px) {
+    .dropdown-item, .dropdown-menu {
+        opacity: 1 !important;
+        background: white !important;
+        z-index: 100 !important;
+    }
+    .navBar {
+        display: none;
+    }
+    .navbar-mobile {
+        display: unset;
+    }
+    .navPreventCover{
+        padding-top: 0em;
+    }
+    .navbar-collapse {
+        padding-left: 1em;
+        text-align: center;
+    }
+    .dropdown-menu {
+        background-color: white;
+        z-index: 110;
+    }
+    /* .nav-link:hover {
+        border-bottom: 3px solid rgb(0, 100, 255);
+    }
+    .nav-item.active .nav-link {
+        border-bottom: 3px solid red;
+    } */
+}

@@ -1,0 +1,18 @@
+
+
+.corp-banner h1, .date-banner h2 {
+  color: white;
+}
+.corp-banner:hover, .corp-banner:hover h1 {
+  color: black;
+}
+
+p {
+  letter-spacing: .4px;
+}
+
+h4 {
+  background-color: #dc3545;
+  border-radius: 4px;
+  color: white;
+}

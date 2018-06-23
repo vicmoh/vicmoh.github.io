@@ -1,0 +1,49 @@
+
+
+.corp-banner h1, .date-banner h2 {
+  color: white;
+}
+.corp-banner:hover, .corp-banner:hover h1 {
+  /*color: black;*/
+}
+
+.date-banner {
+  /*height: 50px;*/
+}
+.date-banner h2 {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.corp-banner, .date-banner {
+  padding: 0;
+}
+
+p {
+  letter-spacing: .4px;
+}
+
+h4 {
+  background-color: #007bff;
+  border-radius: 4px;
+  color: white;
+}
+
+.contact-num, .contact-mail {
+  font-size: 20px;
+  /*margin: 0 auto;*/
+  /*margin-left: 80px;*/
+  margin-bottom: 5px;
+}
+
+
+/*
+.carousel-inner img {
+  width:640px;
+  height:360px;
+}
+.carousel {
+  width:300px;
+  height:360px;
+  overflow: hidden;
+}*/

@@ -23,21 +23,19 @@
     crossorigin="anonymous"></script>
 
   <!--my custom header-->
-  <link rel="stylesheet" type="text/css" href="styles/hover.css">
-
-  <!--aos snik-->
-  <link rel="stylesheet" href="aos/dist/aos.css">
-  <script src="aos/dist/aos.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.css">
+  <link rel="stylesheet" type="text/css" href="vl-assets/styles/global.css">
+  <link rel="stylesheet" type="text/css" href="vl-assets/styles/hover.css">
 
   <!--google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Bungee|Rozha+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Oswald|Raleway" rel="stylesheet">
 
   <!-- view port for phones -->
-  <meta name="viewport" content="width=720">
+  <!-- <meta name="viewport" content="width=720"> -->
   <!-- <meta name="viewport" content="width=device-width"> -->
   <!--https://css-tricks.com/snippets/html/responsive-meta-tag/-->
-  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 
 <body>
@@ -74,7 +72,7 @@
     }
   </style>
   <video class="videoBackground" autoplay muted loop>
-    <source src="assets/highway-video.mov" type="video/mp4" id="video">
+    <source src="vl-assets/assets/highway-video.mov" type="video/mp4" id="video">
   </video>
 
   <style>
@@ -94,7 +92,7 @@
   </style>
   <!-- <section class="logo">
     <div class="logoLocationPage" data-aos="fade-right" data-aos-once="true" data-aos-delay="1300">
-      <img src="assets/logo.png" style="height: 150px;">
+      <img src="vl-assets/assets/logo.png" style="height: 150px;">
     </div>
   </section> -->
 
@@ -116,7 +114,7 @@
     .location a {
       color: white !important;
       text-decoration: none !important;
-      font-size: 70px !important;
+      font-size: 70px;
       text-transform: uppercase !important;
       border-bottom: 3px solid black !important;
     }
@@ -137,19 +135,46 @@
       padding-bottom: 25px !important;
       padding-top: 25px !important;
     }
+
+    .logoLocation{
+      top: 20%;
+      left: 15%;
+      height: 100px;
+    }
+
+    @media(max-width: 760px){
+      .linkLocation{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center;
+      }
+
+      .linkLocation a{
+        font-size: 50px;
+      }
+    }
   </style>
-  <section class="location">
-    <div class="linkLocation">
-      <div class="divLink" data-aos="fade-left" data-aos-delay="1600" data-aos-once="true">
-        <a class="saugaLink hvr-backward" href="homepage.html">Missisauga</a>
-      </div>
-      <div class="divLink" data-aos="fade-left" data-aos-delay="1900" data-aos-once="true">
-        <a class="brampLink hvr-backward" href="homepage.html">Brampton</a>
-      </div>
+
+  <section class="logo">
+    <div class="logoLocation">
+      <img scr="vl-assets/assets/logoHD.png">
     </div>
   </section>
 
-  <script src="scripts/pageload.js"></script>
+  <section class="location">
+    <div class="linkLocation">
+      <div class="divLink" data-aos="fade-left" data-aos-delay="1600" data-aos-once="true">
+        <a class="saugaLink hvr-backward" href="http://www.gooddrivers.ca/index.php">Mississauga</a>
+      </div>
+      <div class="divLink" data-aos="fade-left" data-aos-delay="1900" data-aos-once="true">
+        <a class="brampLink hvr-backward" href="http://www.gooddrivers.ca/brampton/index.php">Brampton</a>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js"></script>
+  <script src="vl-assets/scripts/pageload.js"></script>
   <script>
     AOS.init({
       duration: 1200,

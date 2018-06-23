@@ -1,0 +1,37 @@
+function initFooter(){
+    let htmlfooter = ''
+      + "<section class='footer'>"
+        + "<div class='container'>"
+          + "<div class='row'>"
+            + "<div class='col footerLinks'>"
+              + "<div><a href='http://www.gooddrivers.ca/ministry-approved-driving-schools.php'><p>Program &amp; fees</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Winter_Driving_Training.php'><p>Winter driving tips</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Reasons_Good_Drivers.php'><p>Why choose Good Drivers?</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Register.php'><p>Register online for driving course</p></a></div>"
+              + "<div><a href='https://www.google.co.in/search?q=good+drivers+mississauga&lrd=0x882b46fb54f07409:0x16db5078e3977004,1,&cad=h'><p>Check out what our customers say about us</p></a></div>"
+            + "</div>"
+            + "<div class='col footerLinks'>"
+              + "<div><a href='http://www.gooddrivers.ca/Course_Calendar.php'><p>Course calendar</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Course_Start_Dates.php'><p>Course start date</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Incar_Curriclum.php'><p>In-car lessons</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/Incar_Lesson.php'><p>In-class curriculum</p></a></div>"
+              + "<div><a href='http://www.gooddrivers.ca/franchise_information.php'><p>Franchise information</p></a></div>"
+            + "</div>"
+            + "<div class='col addressInformation'>"
+              + "<div><p>Art of Good Drivers Inc.</p><div>"
+              + "<div><p>3025 Hurontario St. Suite 104 (Ground Floor) Mississauga L5A 2H1</p><div>"
+              + "<div><p>Call: 905 276 6066 or 905 568 8747 </p><div>"
+              + "<div><p><u>info@gooddrivers.ca</u></p></div>"
+            + "</div>"
+          + "</div>"
+        + "</div>"
+      + "</section>"
+      + "<footer>"
+        + "<div class='container'>"
+          + "<p style='color: white;'>Copyright 2018 Art of Good Drivers Inc.</p>"
+        + "</div>"
+      + "</footer>"
+
+    $('#footer-placeholder').append(htmlfooter);
+}
+initFooter();

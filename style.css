@@ -404,6 +404,13 @@ html, body{
     overflow: auto;
 }
 /******************************************/
+/* overwrite */
+.skillsSection i{
+    font-weight: 100 !important;
+}
+
+
+/******************************************/
 /*footer*/
 .footer{
     padding-top: 5px;

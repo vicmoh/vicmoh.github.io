@@ -1,0 +1,372 @@
+<!--
+Name: Vicky Mohammad 
+Date: May 31, 2017
+Readme: This code is the HTML content of my web resume 
+-->
+
+<html>
+<!--fonts and header-->
+
+<head>
+  <title>Vicky Mohammad's Web Resume</title>
+  <!-- my libs -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
+
+  <!-- ajax libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+  <!-- aos lib -->
+  <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
+  <script src="aos/dist/aos.js"></script>
+
+  <!-- view ports -->
+  <meta name="viewport" content="width=500">
+  <!--meta name="viewport" content="width=device-width"-->
+  <!--https://css-tricks.com/snippets/html/responsive-meta-tag/-->
+  <!--meta name="viewport" content="width=device-width, initial-scale=0"-->
+</head>
+
+<!--create main front end-->
+<body>
+  <!-- loading program -->
+  <section>
+    <style>
+      .load{
+        background: white;
+        top:0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.2s;
+        opacity: 1;
+      }
+    </style>
+    <div class="load"></div>
+  </section>
+
+  <!-- load imgs to buffer -->
+  <Section>
+    <div class="imageBuffer" style="visibility: hidden;position: fixed;z-index: -10;">
+      <!-- for example, javascript will insert img here like this -->
+      <!-- <img src="assets/blurredimg-compressed.gif"> -->
+    </div>
+  </Section>
+
+  <!--index for tab bar-->
+  <section class="navbar">
+    <!--social network-->
+    <div class="social">
+      <!--
+      <button type="submit" style="background-color:rgba(255,255,255,0.0); 
+      border:none;" id="resultButton" onclick="showResults();">
+      <img src="images/search.png" /></button>
+      -->
+      <!--linkedin-->
+      <!--<a href="#"><img src="assets/linkedin.png"></a>-->
+      <!--google-->
+      <!--<a><img src="assets/google.png"></a>-->
+      <!--twittern-->
+      <!--<a><img src="assets/twitter.png"></a>-->
+      <!--facebook-->
+      <a href="https://www.facebook.com/vicmoham">
+        <img src="assets/facebook.png">
+      </a>
+    </div>
+    <!--page index-->
+    <div class="navpage">
+      <a href="#personalID" id="index" data-aos="fade" data-aos-delay="2550">Personal</a>
+      <a href="#experienceID" id="index" data-aos="fade" data-aos-delay="2700">Experience</a>
+      <a href="#skillsID" id="index" data-aos="fade" data-aos-delay="2850">Skills</a>
+      <a href="#popup1" id="index" data-aos="fade" data-aos-delay="3000">Contact</a>
+    </div>
+  </section>
+
+  <!--contact popup-->
+  <section id="popup1" class="overlay">
+    <div class="popup">
+      <h2>
+        <u>Contact Information</u>
+      </h2>
+      <!--onClick="history.go(-1);return true;"-->
+      <a class="close" href="#close">&times;</a>
+      <div class="popinfo">
+        <p>Guelph, Ontario Canada</p>
+        <p>Primary: mohammav@uoguelph.ca</p>
+      </div>
+    </div>
+  </section>
+
+  <!--container-->
+  <div class="content">
+
+    <!--name and profile-->
+    <section class="head">
+      <div class="inner">
+        <div class="name animated bounceInUp">
+          <img class="avatar-circle" src="assets/ProfilePic.JPG" alt="profile pic" data-aos="fade-down" data-aos-delay="1500">
+          <h1 data-aos="fade-right" data-aos-delay="2000">Vicky Mohammad</h1>
+          <a href="Vicky Mohammad's Resume.pdf" data-aos="fade-up" data-aos-delay="2500" class="btn">Get Resume</a>
+          <!--href="Vicky Mohammad's Resume.pdf"-->
+        </div>
+      </div>
+    </section>
+
+    <!-- background video -->
+    <!--this overlay cause lag-->
+    <!-- <div class="darkVideoOverlay"></div> -->
+    <video id="video-background" autoplay muted loop>
+        <source src="assets/blurredCar-Dark1.mp4" type="video/mp4" id="video">
+    </video>
+
+    <div class="whiteBackground">
+
+      <!--introduction-->
+      <section class="intro" id="personalID" data-aos="fade-left" data-aos-offset="300">
+        <h1>Welcome!</h1>
+        <p>
+          I see that you are checking at my website! To navigate through the page, click at the navigation bar at the top or scroll
+          down. If you want to get or check out the PDF version of the resume click the (Get Resume) button above. And if you
+          would like to see my repository of my past works, click the GitHub logo below.
+        </p>
+      </section>
+
+      <!--this will be a github logo, make the background white-->
+      <section class="github" id="githubID" data-aos="fade-right" data-aos-offset="300">
+        <a href="https://github.com/vicmoh">
+          <img class="github logo" src="assets/github logo.png">
+        </a>
+      </section>
+
+      <!--personal-->
+      <section class="personal">
+        <table class="personalTable">
+          <th class="firstPersonal" id="firstPersonalID" data-aos="fade-right" data-aos-offset="300">
+            <h1>
+              <i>Personal Background</i>
+            </h1>
+            <p>Hi there! My name is Vicky Mohammad, I am a student at the University of Guelph pursuing bachelor of computing
+              in computer science major. As you know, I am still a student with a limited understanding of programming. My
+              end goal is to learn and experience as much as possible!</p>
+          </th>
+          <th class="secondPersonal" id="secondPersonalID" data-aos="fade-left" data-aos-offset="300">
+            <i>
+              <p>Energetic, self-motivated, and resourceful with a substantial ability to perform efficiently.</p>
+              <p>Ability to work independently with strong problem-solving skills.</p>
+              <p>Collaborate and articulate excellently in a team environment.</p>
+              <p>Outstanding interpersonal and communication skills.</p>
+            </i>
+          </th>
+        </table>
+      </section>
+
+      <!--body content-->
+      <section class="bodyContent">
+        <!--images-->
+        <section class="images">
+          <img data-aos="fade-right" data-aos-offset="300" class="razer" src="assets/croptoprazer.jpg">
+          <img data-aos="fade-down" data-aos-offset="300" class="notebook" src="assets/cropnotebook.jpg">
+          <img data-aos="fade-up" data-aos-offset="300" class="sidepencil" src="assets/cropsideflippencil.jpg">
+          <!--img clas="iphone" src="assets/cropiphone6.jpg"-->
+        </section>
+
+        <!--education-->
+        <section class="education">
+          <h2>Candidate for
+            <i> Bachelor of Computer Science</i>
+          </h2>
+          <p>University of Guelph - Anticipated graduation in the year 2019</p>
+          <hr>
+        </section>
+
+        <!-- good drivers -->
+        <section class="experience" id="experienceID">
+          <!--work experience-->
+          <div class="row">
+            <div class="grid-1">
+              <a class="links" href="http://gooddrivers.ca/">
+                <h2>Good Drivers, freelance -
+                  <i>Web Development</i>
+                </h2>
+              </a>
+              <p>June 2018 - September 2018</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Effectively communicate and share ideas with the client.</li>
+                <li>Update and design a modern responsive website..</li> 
+                <li>Bug fixing old code and incorporate their CMS with the new website.</li>
+                <li>Worked with HTML, CSS, JavaScript, jQuery, MySQL, and PHP.</li>
+                <li><a href="https://www.gooddrivers.ca/">https://www.gooddrivers.ca/</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- joe sewada -->
+          <div class="row">
+            <div class="grid-1">
+              <a>
+                <h2>University of Guelph -
+                  <i>Research Assistance</i>
+                </h2>
+              </a>
+              <p>April 2018 - September 2018</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Solving NP-complete problem of finding Hamiltonian cycle in mid-way vertices of an odd Nth Hypercube using reflected binary code.</li>
+                <li>Creating an algorithm of polynomial time complexity using grey code pattern instead of exhaustive search.</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- royal pioneer -->
+          <div class="row">
+            <div class="grid-1">
+              <a class="links" href="http://rpdw.ca/">
+                <h2>Royal Pioneer, freelance -
+                  <i>Desktop App Development</i>
+                </h2>
+              </a>
+              <p>April 2018 - June 2018</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Create a desktop app that tracks records of company’s client data.</li>
+                <li>Learned and worked with HTML, CSS, JavaScript, and Electron JS.</li>
+                <li>As well as generating invoice record, purchase agreement, and shipping slip and other sale information.</li>
+                <li>Greatly increase the company’s productivity by building a generator for invoice
+                    record, purchase agreements, shipping slip and other sale’s information through the application.</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- royal pioner -->
+          <div class="row">
+            <div class="grid-1">
+              <a class="links" href="http://rpdw.ca/">
+                <h2>Royal Pioneer, freelance -
+                  <i>Logo Design</i>
+                </h2>
+              </a>
+              <p>October 2017 - December 2017</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Effectively communicate with the client and share ideas.</li>
+                <li>Designed variety of draft logos to be able to determine the desired logo for the company through AutoDesk SketchBook.</li>
+                <li>Create the design logos from the draft with Adobe Illustrator to be able to visualize the ideal logo with the
+                  client.</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- uow incubator -->
+          <div class="row">
+            <div class="grid-1">
+              <!--href="https://vicmoh.github.io/Treelea/index.html#homeID" href="http://treelea.com"-->
+              <a>
+                <h2>University of Waterloo, E Co-op, Treelea -
+                  <i>Mobile Development</i>
+                </h2>
+              </a>
+              <p>January 2017 - April 2017</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Develop plans and flowchart for algorithm, workflow, or process to determine flaws and improvements.</li>
+                <li>Integrate Google Firebase to be able to manage a real-time database and cloud system.</li>
+                <li>Incorporate Facebook SDK and APIs such as login authorization for user statistics.</li>
+                <li>Worked with Swift, Javascript, HTML, and CSS</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- uot incubator -->
+          <div class="row">
+            <div class="grid-1">
+              <a class="links" href="http://icubeutm.ca/our-teams/sensify-labs/">
+                <h2>University of Toronto, ICUBE, Sensify Labs -
+                  <i>Front-End/Web Design</i>
+                </h2>
+              </a>
+              <p>October 2016 - November 2016</p>
+            </div>
+            <div class="grid-2">
+              <ul>
+                <li>Design modern intuitive UI/UX scheme using Sketch.</li>
+                <li>Create assets for interface implementation as well as logo designs and image editing
+                    through photoshop.</li>
+                <li>Communicate and assist with developers in HTML, CSS, and WordPress.</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+        </section>
+        <!--end of body section-->
+      </section>
+
+      <!--Skills and contacts-->
+      <section class="skills" data-aos="fade" data-aos-offset="300">
+        <table class="skillsTable">
+          <!--skills section-->
+          <th class="skillsSection" id="skillsID" data-aos="fade-right" data-aos-offset="300">
+            <div>
+              <h1>Knowledge &amp; Skills </h1>
+              <!-- primary language -->
+              <p>Languages/Frameworks:
+                <i>C/C++, JavaScript, HTML, CSS, Dart, Python, Java, Swift</i>
+              </p>
+               <!-- other language used -->
+               <!-- <p>Other Languages/Frameworks used:
+                <i>TypeScript, Angular, Ionic, Electron, PostgreSQL, MySQL</i>
+              </p> -->
+              <!-- develoment environment -->
+              <p>Development Environment:
+                <i>MacOS, Windows, Linux.</i>
+              </p>
+              <!-- tools for development -->
+              <p>Tools:
+                <i>Visual Studio Code, Android Studio, IntelliJ, XCode, Photoshop, Sketch.</i>
+              </p>
+            </div>
+          </th>
+          <!--contact section-->
+          <th class="contact" id="contactID" data-aos="fade-left" data-aos-offset="300">
+            <div>
+              <h1>Contact</h1>
+              <p>Guelph, On N1G2W6</p>
+              <p>Canada</p>
+              <p>1-(519)-731-5289</p>
+              <p>mohammav@uoguelph.ca</p>
+            </div>
+          </th>
+        </table>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <p>&copy; Vicky Mohammad 2017</p>
+      </footer>
+      <!--end of container-->
+    </div><!-- white background ends-->
+  </div>
+
+  <!-- animation and etc -->
+  <script src="script.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+</body>
+
+</html>
